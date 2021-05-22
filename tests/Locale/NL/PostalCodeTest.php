@@ -10,7 +10,7 @@ test('Test that a valid Dutch postalcode is considered correct', function () {
     );
 });
 
-test('Test that a valid Dutch postalcode with a space in it is considered valid', function() {
+test('Test that a valid Dutch postalcode with a space in it is considered valid', function () {
     $sut = new PostalCode(true);
 
     $this->assertTrue(
@@ -18,7 +18,7 @@ test('Test that a valid Dutch postalcode with a space in it is considered valid'
     );
 });
 
-test('Test that a Dutch postalcode check fails if it contains a blacklisted postal code', function() {
+test('Test that a Dutch postalcode check fails if it contains a blacklisted postal code', function () {
     $sut = new PostalCode();
 
     $this->assertFalse(
@@ -34,7 +34,7 @@ test('Test that a Dutch postalcode check fails if it contains a blacklisted post
     );
 });
 
-test('Test that the Dutch postalcode numeric part fails, when it is below 999', function() {
+test('Test that the Dutch postalcode numeric part fails, when it is below 999', function () {
     $sut = new PostalCode();
 
     $this->assertFalse(
@@ -58,7 +58,7 @@ test('Test that a Dutch postalcode must fail with 3 letters', function () {
     );
 });
 
-test('Test that the Dutch postalcode check fails when it has completely non-sensical', function() {
+test('Test that the Dutch postalcode check fails when it has completely non-sensical', function () {
     $sut = new PostalCode();
 
     $this->assertFalse(
