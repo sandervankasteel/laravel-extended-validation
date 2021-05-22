@@ -1,0 +1,44 @@
+{
+    "name": "sandervankasteel/laravel-extended-validation",
+    "description": "A Laravel library with extra validation rules",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sander van Kasteel",
+            "email": "info@sandervankasteel.nl",
+            "homepage": "https://sandervankasteel.nl"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/validation": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "orchestra/testbench": "^6.17",
+        "pestphp/pest": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SandervanKasteel\\LaravelExtendedValidation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SandervanKasteel\\LaravelExtendedValidation\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SandervanKasteel\\LaravelExtendedValidation\\LaravelExtendedValidationServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
