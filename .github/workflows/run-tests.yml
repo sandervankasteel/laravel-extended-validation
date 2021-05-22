@@ -1,3 +1,4 @@
+name: Run automated testing
 on:
   push:
   pull_request:
