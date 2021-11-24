@@ -1,4 +1,4 @@
-mkdocs-materialsite_name: Laraval Extended Validation
+site_name: Laraval Extended Validation
 site_description: Documentation for Laraval Extended Validation
 
 repo_name: sandervankasteel/laravel-extended-validation
