@@ -14,8 +14,8 @@ theme:
     scheme: preference
     primary: blue
     accent: blue
-  favicon: images/favicon.ico
-  logo: images/logo.svg
+#  favicon: images/favicon.ico
+#  logo: images/logo.svg
   icon:
     repo: fontawesome/brands/github
   language: en
