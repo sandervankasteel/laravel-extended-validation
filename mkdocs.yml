@@ -1,0 +1,55 @@
+mkdocs-materialsite_name: Laraval Extended Validation
+site_description: Documentation for Laraval Extended Validation
+
+repo_name: sandervankasteel/laravel-extended-validation
+repo_url: https://github.com/sandervankasteel/laravel-extended-validation
+edit_uri: https://github.com/sandervankasteel/laravel-extended-validation/edit/main/docs/
+
+theme:
+  name: readthedocs
+  font:
+    text: 'Nunito'
+    code: 'Fira Code'
+  palette:
+    scheme: preference
+    primary: blue
+    accent: blue
+  favicon: images/favicon.ico
+  logo: images/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  language: en
+  features:
+    - navigation.instant
+
+extra:
+  manifest: manifest.webmanifest
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sandervankasteel/laravel-extended-validation
+      name: Laraval Extended Validation repository
+
+plugins:
+  - search: { }
+
+nav:
+  - index.md
+
+markdown_extensions:
+  - admonition: { }
+  - meta: { }
+  - toc:
+      permalink: '#'
+  - pymdownx.details: { }
+  - pymdownx.highlight:
+      use_pygments: false
+  - pymdownx.superfences: { }
+  - pymdownx.keys: { }
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js
+  - javascripts/highlight.js
+
+# Themes can be found here: <https://github.com/highlightjs/highlight.js/tree/master/src/styles>
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/atom-one-dark-reasonable.min.css
