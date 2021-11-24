@@ -6,7 +6,7 @@ repo_url: https://github.com/sandervankasteel/laravel-extended-validation
 edit_uri: https://github.com/sandervankasteel/laravel-extended-validation/edit/main/docs/
 
 theme:
-  name: readthedocs
+  name: material
   font:
     text: 'Nunito'
     code: 'Fira Code'
