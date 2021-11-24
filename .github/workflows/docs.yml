@@ -1,4 +1,4 @@
-name: ci
+name: Docs generation
 on:
   push:
 #    branches:
