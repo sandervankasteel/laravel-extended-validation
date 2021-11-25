@@ -1,4 +1,5 @@
 # Social Security Number
+### `SandervanKasteel\LaravelExtendedValidation\Rules\Locale\NL\Person\SocialSecurityNumber`
 
 The Social Security Number (SSN) is also sometimes refered to as 'BSN' (Burgerservicenummer).
 

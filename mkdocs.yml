@@ -29,8 +29,8 @@ extra:
       link: https://github.com/sandervankasteel/laravel-extended-validation
       name: Laraval Extended Validation repository
   locals: &locales
-    - NL/Address/PostalCode.md
-    - NL/Person/SocialSecurityNumber.md
+    - locale/NL/Address/PostalCode.md
+    - locale/NL/Person/SocialSecurityNumber.md
 
 plugins:
   - search: { }
