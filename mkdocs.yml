@@ -28,12 +28,16 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/sandervankasteel/laravel-extended-validation
       name: Laraval Extended Validation repository
+  locals: &locales
+    - NL/Address/PostalCode.md
+    - NL/Person/SocialSecurityNumber.md
 
 plugins:
   - search: { }
 
 nav:
   - index.md
+  - 'Locales': *locales
 
 markdown_extensions:
   - admonition: { }
