@@ -8,7 +8,7 @@ Valid examples are:
 - 1234AB
 - 1234 AB
 
-## Constructor parameters
+## Constructor argument(s)
 
 ```php
 // Determines if a zipcode may contain.
