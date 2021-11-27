@@ -1,7 +1,7 @@
 # LessThanValue
-## ` SandervanKasteel\LaravelExtendedValidation\Rules\Database\LessThenValue;`
+## ` SandervanKasteel\LaravelExtendedValidation\Rules\Database\LessThanValue;`
 
-A validation rule that checks if the POSTed value is less than a value found in the database.
+A validation rule that checks if the POSTed value is less than a value found in a database row.
 
 Please note, this validation fails when it can not find a record to compare against.
 
