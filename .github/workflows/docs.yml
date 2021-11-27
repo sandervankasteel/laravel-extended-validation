@@ -1,8 +1,8 @@
 name: Docs generation
 on:
   push:
-#    branches:
-#      - main
+    branches:
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
