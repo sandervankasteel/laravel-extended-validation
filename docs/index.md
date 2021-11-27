@@ -1,3 +1,3 @@
-### Hello world
+# Laravel Extended Validation
 
 Hello world :)
