@@ -1,4 +1,4 @@
-name: Run automated testing
+name: Automated tests
 on:
   push:
   pull_request:
@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [7.4, 8.0]
+        php: [7.3, 7.4, 8.0]
         laravel: [8.*, 7.*]
         dependency-version: [prefer-lowest, prefer-stable]
         include:
@@ -40,3 +40,9 @@ jobs:
 
       - name: Execute tests
         run: XDEBUG_MODE=coverage ./vendor/bin/pest --coverage
+
+      - name: Download codecov.io uploader
+        run: curl -Os https://uploader.codecov.io/latest/linux/codecov && chmod +x codecov
+
+      - name: Upload coverage report to CodeCov
+        run: ./codecov -t ${CODECOV_TOKEN}

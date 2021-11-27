@@ -4,7 +4,7 @@
 [![codecov](https://codecov.io/gh/sandervankasteel/laravel-extended-validation/branch/main/graph/badge.svg?token=OwUljizrrZ)](https://codecov.io/gh/sandervankasteel/laravel-extended-validation)
 
 
-This packages hopes to provide you with a lot of useful additional validation rules :) 
+This packages hopes to provide you with a lot of useful additional validation rules :)
 
 ## Installation
 
