@@ -10,3 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Rule for Dutch postcodes
 - Rule for Dutch Social Security numbers
+- Added Database/LessThanValue rule

@@ -37,6 +37,8 @@ plugins:
 
 nav:
   - index.md
+  - 'Database':
+      - database/LessThanValue.md
   - 'Locales':
       - 'NL': *localesNl
 
