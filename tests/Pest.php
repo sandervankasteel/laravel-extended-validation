@@ -13,6 +13,26 @@
 
 // uses(Tests\TestCase::class)->in('Feature');
 
+use Illuminate\Foundation\Application;
+use Orchestra\Testbench\TestCase;
+
+uses(TestCase::class)
+    ->beforeEach(function() {
+
+        /** @var $app Application */
+        $app = $this->app;
+
+        $app['config']
+            ->set('database.default', 'sqlite');
+
+        $app['config']
+            ->set('database.connections.sqlite', [
+                'driver' => 'sqlite',
+                'database' => ':memory:',
+            ]);
+    })
+    ->in('Database');
+
 /*
 |--------------------------------------------------------------------------
 | Expectations
@@ -39,7 +59,3 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something()
-{
-    // ..
-}
