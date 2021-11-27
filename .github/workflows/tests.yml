@@ -40,3 +40,9 @@ jobs:
 
       - name: Execute tests
         run: XDEBUG_MODE=coverage ./vendor/bin/pest --coverage
+
+      - name: Download codecov.io uploader
+      - run: curl -Os https://uploader.codecov.io/latest/linux/codecov && chmod +x codecov
+
+      - name: Upload coverage report to CodeCov
+        run: ./codecov -t ${CODECOV_TOKEN}
