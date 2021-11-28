@@ -33,7 +33,6 @@ class LessThanOrEqualValue implements Rule
     {
         $res = DB::table($this->table)
             ->where($this->identifierColumn, $this->uniqueIdentifier)
-            ->get($this->column)
             ->first();
 
         if($res === null) {
