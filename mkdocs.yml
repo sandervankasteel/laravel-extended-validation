@@ -39,6 +39,10 @@ nav:
   - index.md
   - 'Database':
       - database/LessThanValue.md
+      - database/LessThanOrEqualValue.md
+      - database/MoreThanValue.md
+      - database/MoreThanOrEqualValue.md
+      - database/MustBeEqualValue.md
   - 'Locales':
       - 'NL': *localesNl
 
