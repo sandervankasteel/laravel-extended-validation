@@ -35,7 +35,7 @@ class LessThanOrEqualValue implements Rule
             ->where($this->identifierColumn, $this->uniqueIdentifier)
             ->first();
 
-        if($res === null) {
+        if ($res === null) {
             return false;
         }
 

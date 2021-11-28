@@ -31,16 +31,15 @@ class MoreThanValue implements Rule
      */
     public function passes($attribute, $value)
     {
-        $res = DB::table($this->table)
+        $result = DB::table($this->table)
             ->where($this->identifierColumn, $this->uniqueIdentifier)
-            ->get($this->column)
             ->first();
 
-        if($res === null) {
+        if ($result === null) {
             return false;
         }
 
-        $this->foundValue = $res->{$this->column};
+        $this->foundValue = $result->{$this->column};
 
         return $value > $this->foundValue;
     }
