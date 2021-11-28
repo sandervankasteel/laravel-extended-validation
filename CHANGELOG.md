@@ -12,3 +12,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Rule for Dutch Social Security numbers
 - Added Database/LessThanValue rule
 - Added Database/LessThanOrEqualValue rule
+- Added Database/MoreThanValue rule
+- Added Database/MoreThanOrEqualValue rule 
+- Added Database/MustBeEqualValue rule
