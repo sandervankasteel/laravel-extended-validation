@@ -41,5 +41,8 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "codestyle-fix": "./vendor/bin/php-cs-fixer fix"
+    }
 }
