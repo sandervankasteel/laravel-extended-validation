@@ -16,7 +16,7 @@ $uniqueIdentifier = '' // Unique identifying value for a row (Would most likely 
 
 ## Example
 
-```
+```php
 class DiscountPriceController extends Controller 
 {
     public function storeDiscountedPrice(Request $request)
@@ -30,7 +30,7 @@ class DiscountPriceController extends Controller
             'price' => [
                 'required'
                 'numeric' ,
-                 new LessThanValue(
+                 new LessThanOrEqualValue(
                     'products',
                     'price',
                     'id',
@@ -40,7 +40,7 @@ class DiscountPriceController extends Controller
         ]);
         
         return Discount::create([
-            'product_id' => $validated-['product_id'],
+            'product_id' => $validated->['product_id'],
             'price' => $validated->['price']
         ]);
     }
