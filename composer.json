@@ -12,6 +12,7 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
+        "illuminate/database": "^7.0|^8.0",
         "illuminate/validation": "^7.0|^8.0"
     },
     "require-dev": {
@@ -40,5 +41,8 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "codestyle-fix": "./vendor/bin/php-cs-fixer fix"
+    }
 }

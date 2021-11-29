@@ -7,6 +7,9 @@
     <testsuites>
         <testsuite name="Test Suite">
             <directory suffix="Test.php">./tests</directory>
+            <exclude>
+                <directory suffix=".php">./tests/Database/migrations</directory>
+            </exclude>
         </testsuite>
     </testsuites>
     <coverage processUncoveredFiles="true">
@@ -14,6 +17,9 @@
             <directory suffix=".php">./app</directory>
             <directory suffix=".php">./src</directory>
         </include>
+        <exclude>
+            <directory suffix=".php">./tests/Database/migrations</directory>
+        </exclude>
         <report>
             <clover outputFile="clover-coverage.xml"/>
         </report>
