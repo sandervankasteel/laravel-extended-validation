@@ -11,7 +11,7 @@ class IBAN implements Rule
     {
         $countryCodeRegex = '/(^[A-Z][A-Z][0-9][0-9])/';
 
-        $value = (string) Str::of($value)
+        $value = Str::of($value)
             ->upper()
             ->replace(' ', '')
             ->replaceMatches($countryCodeRegex, '')
