@@ -15,3 +15,12 @@ test('that we can successfully validate an IBAN number', function ($ibanNumber, 
     [ 'NL32RABO1234567890', false ],
 ]);
 
+test('that the attribute is being returned in the error message', function () {
+    $sut = new IBAN();
+    $sut->passes('attr1', 'abcd1234');
+
+    expect(
+        $sut->message()
+    )->toContain(':attribute');
+});
+

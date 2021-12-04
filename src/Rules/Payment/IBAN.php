@@ -28,7 +28,7 @@ class IBAN implements Rule
 
     public function message()
     {
-
+        return 'The :attribute does not contain a valid IBAN number';
     }
 
     private function transposeLettersToNumbers(array $matches): string
