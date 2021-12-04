@@ -1,7 +1,7 @@
 # Postalcode
 ### `SandervanKasteel\LaravelExtendedValidation\Rules\Locale\NL\Address\PostalCode`
 
-Determines if the supplied postalcode (zipcode / postcode) is conform the Dutch standard.
+Determines if the supplied postalcode (zipcode / postcode) is conforming to the Dutch standard of postalcodes.
 
 Valid examples are:
 
