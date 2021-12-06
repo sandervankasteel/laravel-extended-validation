@@ -15,3 +15,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Database/MoreThanValue rule
 - Added Database/MoreThanOrEqualValue rule 
 - Added Database/MustBeEqualValue rule
+- Added Color/HexColor rule
+- Added rule for IBAN numbers
+- Added rule for 10 digit's IBAN numbers

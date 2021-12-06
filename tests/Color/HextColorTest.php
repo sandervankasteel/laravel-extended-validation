@@ -2,7 +2,7 @@
 
 use SandervanKasteel\LaravelExtendedValidation\Rules\Color\HexColor;
 
-test('something', function($hexColor, $valid) {
+test('that we can successfully validate a hex color code', function($hexColor, $valid) {
     $sut = new HexColor();
 
     expect(

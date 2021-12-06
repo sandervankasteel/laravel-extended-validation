@@ -37,6 +37,8 @@ plugins:
 
 nav:
   - index.md
+  - 'Barcode':
+      - barcode/ISBN10.md
   - 'Color':
       - color/HexColor.md
   - 'Database':
