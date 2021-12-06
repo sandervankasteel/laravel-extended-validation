@@ -16,6 +16,7 @@ test('that we can successfully validate an ISBN-10 number', function ($isbn, $ex
     [ '0306406152', true],
     [ '0306406153', false],
     [ '0306406153123', false],
+    [ '030640615', false]
 ]);
 
 test('that the attribute is being returned in the error message', function() {
