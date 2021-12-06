@@ -37,6 +37,8 @@ plugins:
 
 nav:
   - index.md
+  - 'Color':
+      - HexColor.md
   - 'Database':
       - database/LessThanValue.md
       - database/LessThanOrEqualValue.md
@@ -45,6 +47,8 @@ nav:
       - database/MustBeEqualValue.md
   - 'Locales':
       - 'NL': *localesNl
+  - 'Payment':
+      - payment/IBAN.md
 
 markdown_extensions:
   - admonition: { }
