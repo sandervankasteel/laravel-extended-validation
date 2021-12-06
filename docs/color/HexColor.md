@@ -1,4 +1,4 @@
-# IBAN
+# HexColor
 ### `SandervanKasteel\LaravelExtendedValidation\Rules\Color\HexColor`
 
 This validation rules checks if the posted input is a valid Hexadecimal color code.
