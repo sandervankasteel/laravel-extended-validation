@@ -57,7 +57,7 @@ class Time12Hour implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         $message = "The :attribute does not contain a valid time. It needs be in the following format: "
             . collect(['12', '00', '00'])->join($this->timeSeparator);
