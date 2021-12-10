@@ -27,7 +27,7 @@ uses(TestCase::class)
 
         $app['config']
             ->set('database.connections.sqlite', [
-                'driver' => 'sqlite',
+                'driver'   => 'sqlite',
                 'database' => ':memory:',
             ]);
     })

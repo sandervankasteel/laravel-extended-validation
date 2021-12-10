@@ -11,7 +11,7 @@ class HexColor implements Rule
      */
     public function passes($attribute, $value)
     {
-        if(strlen($value) > 7) {
+        if (strlen($value) > 7) {
             return false;
         }
 
@@ -20,7 +20,8 @@ class HexColor implements Rule
 
         $colours = str_split(
             ($startsWithHashSign) ? $colourCodes[1] : $value,
-        2);
+            2
+        );
 
         $validColourRange = false;
 
@@ -38,6 +39,6 @@ class HexColor implements Rule
      */
     public function message()
     {
-        return "The :attribute does not contain a valid hex color";
+        return 'The :attribute does not contain a valid hex color';
     }
 }

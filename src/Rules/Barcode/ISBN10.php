@@ -7,7 +7,6 @@ use Illuminate\Support\Str;
 
 class ISBN10 implements Rule
 {
-
     /**
      * @inheritDoc
      */
@@ -20,7 +19,7 @@ class ISBN10 implements Rule
             )
         );
 
-        if($values->count() !== 10) {
+        if ($values->count() !== 10) {
             return false;
         }
 
@@ -39,6 +38,6 @@ class ISBN10 implements Rule
      */
     public function message()
     {
-        return ":attribute does not contain a valid ISBN10 number";
+        return ':attribute does not contain a valid ISBN10 number';
     }
 }

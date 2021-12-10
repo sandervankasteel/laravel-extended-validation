@@ -30,14 +30,14 @@ class Time24Hour implements Rule
 
         return $parsedDate !== false &&
             Str::of($parsedDate->format($expectedFormat))
-                ->matchAll('/' . $values->join('|') . '/')
+                ->matchAll('/'.$values->join('|').'/')
                 ->count() === $values->count();
     }
 
     public function message(): string
     {
-        return "The :attribute does not contain a valid time. It needs be in the following format: "
-            . collect(['20', '00', '00'])
+        return 'The :attribute does not contain a valid time. It needs be in the following format: '
+            .collect(['20', '00', '00'])
                 ->join($this->timeSeparator);
     }
 }

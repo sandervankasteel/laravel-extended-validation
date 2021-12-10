@@ -16,6 +16,7 @@ class PostalCode implements Rule
 
     /**
      * PostalCode constructor.
+     *
      * @param false $mayContainSpace
      */
     public function __construct(bool $mayContainSpace = false)
@@ -43,11 +44,11 @@ class PostalCode implements Rule
         // If the input is '1234AB' then element 0 is '1234' and element 1 is 'AB'
         $sequence = str_split($value, 4);
 
-        if (! is_numeric($sequence[0])) {
+        if (!is_numeric($sequence[0])) {
             return false;
         }
 
-        if (! ((int) $sequence[0] >= 1000 && (int) $sequence[0] <= 9999)) {
+        if (!((int) $sequence[0] >= 1000 && (int) $sequence[0] <= 9999)) {
             return false;
         }
 

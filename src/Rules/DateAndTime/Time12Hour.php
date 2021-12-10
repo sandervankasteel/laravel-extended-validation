@@ -50,7 +50,7 @@ class Time12Hour implements Rule
 
         return $parsedDate !== false &&
             Str::of($parsedDate->format($expectedFormat))
-                ->matchAll('/' . $values->join('|') . '/')
+                ->matchAll('/'.$values->join('|').'/')
                 ->count() === $values->count();
     }
 
@@ -59,11 +59,11 @@ class Time12Hour implements Rule
      */
     public function message(): string
     {
-        $message = "The :attribute does not contain a valid time. It needs be in the following format: "
-            . collect(['12', '00', '00'])->join($this->timeSeparator);
+        $message = 'The :attribute does not contain a valid time. It needs be in the following format: '
+            .collect(['12', '00', '00'])->join($this->timeSeparator);
 
-        if($this->requiresMeridiem) {
-            return $message . " AM";
+        if ($this->requiresMeridiem) {
+            return $message.' AM';
         }
 
         return $message;
