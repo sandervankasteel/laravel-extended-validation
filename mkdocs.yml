@@ -47,6 +47,10 @@ nav:
       - database/MoreThanValue.md
       - database/MoreThanOrEqualValue.md
       - database/MustBeEqualValue.md
+  - 'Date and time':
+      - dateandtime/Time12Hour.md
+      - dateandtime/Time24Hour.md
+      - dateandtime/UnixTime.md
   - 'Locales':
       - 'NL': *localesNl
   - 'Payment':
@@ -67,6 +71,5 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js
   - javascripts/highlight.js
 
-# Themes can be found here: <https://github.com/highlightjs/highlight.js/tree/master/src/styles>
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/atom-one-dark-reasonable.min.css
