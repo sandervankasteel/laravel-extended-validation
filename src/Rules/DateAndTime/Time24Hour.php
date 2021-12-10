@@ -18,7 +18,7 @@ class Time24Hour implements Rule
     public function passes($attribute, $value): bool
     {
         $values = Str::of($value)
-            ->remove(' ')
+            ->replace(' ', '')
             ->explode($this->timeSeparator);
 
         $expectedFormat = ($values->count() === 2) ? 'H:i' : 'H:i:s';

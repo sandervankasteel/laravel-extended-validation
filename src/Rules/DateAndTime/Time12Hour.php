@@ -37,8 +37,8 @@ class Time12Hour implements Rule
         }
 
         $values = Str::of($value)
-            ->remove($meridiem)
-            ->remove(' ')
+            ->replace($meridiem, '')
+            ->replace(' ', '')
             ->explode($this->timeSeparator);
 
         $expectedFormat = ($values->count() === 2) ? 'h:ia' : 'h:i:sa';
