@@ -37,14 +37,21 @@ class Time12Hour implements Rule
         }
 
         $values = Str::of($value)
+            ->remove($meridiem)
+            ->remove(' ')
             ->explode($this->timeSeparator);
 
         $expectedFormat = ($values->count() === 2) ? 'h:ia' : 'h:i:sa';
 
-        return DateTime::createFromFormat(
+        $parsedDate = DateTime::createFromFormat(
             $expectedFormat,
             $values->join(':').$meridiem
-        ) !== false;
+        );
+
+        return $parsedDate !== false &&
+            Str::of($parsedDate->format($expectedFormat))
+                ->matchAll('/' . $values->join('|') . '/')
+                ->count() === $values->count();
     }
 
     /**
@@ -52,6 +59,13 @@ class Time12Hour implements Rule
      */
     public function message()
     {
-        // TODO: Implement message() method.
+        $message = "The :attribute does not contain a valid time. It needs be in the following format: "
+            . collect(['12', '00', '00'])->join($this->timeSeparator);
+
+        if($this->requiresMeridiem) {
+            return $message . " AM";
+        }
+
+        return $message;
     }
 }
