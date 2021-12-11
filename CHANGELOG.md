@@ -17,7 +17,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Database/MustBeEqualValue rule
 - Added Color/HexColor rule
 - Added rule for IBAN numbers
-- Added rule for 10 digit's IBAN numbers
+- Added rule for 10 digit's ISBN numbers
+- Added rule for 13 digit's ISBN numbers
 - Added rule for a 12hour time format
 - Added rule for a 24hour time format
 - Added rule for validating UNIX timestamps

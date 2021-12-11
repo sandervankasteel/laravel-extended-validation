@@ -39,6 +39,7 @@ nav:
   - index.md
   - 'Barcode':
       - barcode/ISBN10.md
+      - barcode/ISBN13.md
   - 'Color':
       - color/HexColor.md
   - 'Database':
