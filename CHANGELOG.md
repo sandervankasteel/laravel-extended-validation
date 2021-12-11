@@ -24,3 +24,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added rule for a 12hour time format
 - Added rule for a 24hour time format
 - Added rule for validating UNIX timestamps
+- Added "OrRule"

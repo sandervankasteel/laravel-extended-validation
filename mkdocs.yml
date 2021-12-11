@@ -34,6 +34,8 @@ plugins:
 
 nav:
   - index.md
+  - 'General':
+      - general/OrRule.md
   - 'Barcode':
       - barcode/ISBN10.md
       - barcode/ISBN13.md
