@@ -8,9 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Rule for Dutch postcodes
+- Rule for Dutch postal codes
 - Rule for Dutch Social Security numbers
 - Rule for Dutch VAT numbers
+- Rule for Belgium postal codes
 - Added Database/LessThanValue rule
 - Added Database/LessThanOrEqualValue rule
 - Added Database/MoreThanValue rule
