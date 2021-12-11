@@ -6,7 +6,6 @@ use Illuminate\Contracts\Validation\Rule;
 
 class PostalCode implements Rule
 {
-
     private $specialPostalCodes = [
         612, // Sinterklaas
         1005, // Verenigde Vergadering van de Gemeenschappelijke
@@ -65,15 +64,15 @@ class PostalCode implements Rule
     {
         $value = (int) $value;
 
-        if($this->checkForSpecialPostalCodes && in_array($value, $this->specialPostalCodes)) {
+        if ($this->checkForSpecialPostalCodes && in_array($value, $this->specialPostalCodes)) {
             return true;
         }
 
-        if(!$this->checkForSpecialPostalCodes && in_array($value, $this->specialPostalCodes)) {
+        if (! $this->checkForSpecialPostalCodes && in_array($value, $this->specialPostalCodes)) {
             return false;
         }
 
-        if($value >= 1000 && $value <= 9992) {
+        if ($value >= 1000 && $value <= 9992) {
             return true;
         }
 
