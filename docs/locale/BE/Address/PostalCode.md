@@ -1,7 +1,7 @@
 # Postalcode
 ### `LaravelExtendedValidation\Rules\Locale\BE\Address\PostalCode`
 
-Determines if the supplied postalcode (zipcode / postcode) is conforming a Belgium Postalcode.
+Determines if the supplied postalcode (zipcode / 'postnummer') is a vlid Belgium postalcode.
 
 ## Constructor argument(s)
 
