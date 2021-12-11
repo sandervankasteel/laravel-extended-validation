@@ -66,7 +66,7 @@ test('that the Dutch postalcode check fails when it has completely non-sensical'
     );
 });
 
-test('that the attribute is returned in the error message', function() {
+test('that the attribute is returned in the error message', function () {
     $sut = new PostalCode();
 
     expect(
@@ -74,7 +74,7 @@ test('that the attribute is returned in the error message', function() {
     )->toContain(':attribute');
 });
 
-test('that the an example zipcode is returned in the error message', function() {
+test('that the an example zipcode is returned in the error message', function () {
     $sut = new PostalCode();
 
     expect(
@@ -82,7 +82,7 @@ test('that the an example zipcode is returned in the error message', function() 
     )->toContain('1234AB');
 });
 
-test('that the an example zipcode with space is returned in the error message when allowed', function() {
+test('that the an example zipcode with space is returned in the error message when allowed', function () {
     $sut = new PostalCode(true);
 
     expect(
