@@ -36,3 +36,11 @@ test('that a number longer then 9 numbers is considered invalid', function () {
         $sut->passes('some-attribute', '1234567890')
     );
 });
+
+test('that the attribute is returned in the error message', function () {
+    $sut = new SocialSecurityNumber();
+
+    expect(
+        $sut->message()
+    )->toContain(':attribute');
+});
