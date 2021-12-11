@@ -69,6 +69,10 @@ class PostalCode implements Rule
             return true;
         }
 
+        if(!$this->checkForSpecialPostalCodes && in_array($value, $this->specialPostalCodes)) {
+            return false;
+        }
+
         if($value >= 1000 && $value <= 9992) {
             return true;
         }
