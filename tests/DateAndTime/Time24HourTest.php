@@ -14,8 +14,6 @@ test('that we can succesfully validate a time in the 24-hour format', function (
     ['23:59:99', false],
 ]);
 
-
-
 test('that we can succesfully validate a time in the 24-hours format with a custom separator', function ($timeString, $expectedResult) {
     $sut = new Time24Hour('*');
 
@@ -28,8 +26,7 @@ test('that we can succesfully validate a time in the 24-hours format with a cust
     ['12*59*99', false],
 ]);
 
-
-test('that the attribute is being returned in the error message', function() {
+test('that the attribute is being returned in the error message', function () {
     $sut = new Time24Hour();
 
     expect(
@@ -37,7 +34,7 @@ test('that the attribute is being returned in the error message', function() {
     )->toContain(':attribute');
 });
 
-test('that an example time is being returned', function() {
+test('that an example time is being returned', function () {
     $sut = new Time24Hour();
 
     expect(
@@ -45,7 +42,7 @@ test('that an example time is being returned', function() {
     )->toContain('20:00:00');
 });
 
-test('that the a custom timeseparator is being returned in the error message', function() {
+test('that the a custom timeseparator is being returned in the error message', function () {
     $sut = new Time24Hour('*');
 
     expect(

@@ -23,7 +23,7 @@ class IBAN implements Rule
                 return $this->transposeLettersToNumbers($matches);
             });
 
-        return bcmod($value, '97') === "1";
+        return bcmod($value, '97') === '1';
     }
 
     public function message()
@@ -34,11 +34,11 @@ class IBAN implements Rule
     private function transposeLettersToNumbers(array $matches): string
     {
         $alphabet = range('A', 'Z');
-        $replacedValues = "";
+        $replacedValues = '';
 
-        for ($i = 1; $i < count ($matches); $i++) {
+        for ($i = 1; $i < count($matches); $i++) {
             $match = $matches[$i];
-            $replacedValues .= (int)array_search($match, $alphabet) + 10;
+            $replacedValues .= (int) array_search($match, $alphabet) + 10;
         }
 
         return $replacedValues;

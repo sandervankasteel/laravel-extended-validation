@@ -9,7 +9,7 @@ class UnixTime implements Rule
 {
     public function passes($attribute, $value): bool
     {
-        if(!is_numeric($value)) {
+        if (! is_numeric($value)) {
             return false;
         }
 

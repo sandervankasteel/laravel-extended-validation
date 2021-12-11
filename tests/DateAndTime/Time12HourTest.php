@@ -38,7 +38,7 @@ test('that we can succesfully validate a time in the 12 hour format with PM meri
     ['12:59:99 PM', false],
 ]);
 
-test('that we can validate a time in the 12 hour format with an AM meridiem AND a custom seperator', function($timeString, $expectedResult) {
+test('that we can validate a time in the 12 hour format with an AM meridiem AND a custom seperator', function ($timeString, $expectedResult) {
     $sut = new Time12Hour(true, '-');
 
     expect(
@@ -57,12 +57,12 @@ test('that we can we can not validate a time in the 12 hour format with nonsensi
         $sut->passes('some-attribute', $timeString)
     )->toBe($expectedResult);
 })->with([
-    ['12:00 XM', false ],
-    ['12:00:00 XM', false ],
-    ['12:59:99 XM', false ],
+    ['12:00 XM', false],
+    ['12:00:00 XM', false],
+    ['12:59:99 XM', false],
 ]);
 
-test('that the attribute is being returned in the error message', function() {
+test('that the attribute is being returned in the error message', function () {
     $sut = new Time12Hour();
 
     expect(
@@ -70,7 +70,7 @@ test('that the attribute is being returned in the error message', function() {
     )->toContain(':attribute');
 });
 
-test('that an example time is being returned', function() {
+test('that an example time is being returned', function () {
     $sut = new Time12Hour(true);
 
     expect(
@@ -78,7 +78,7 @@ test('that an example time is being returned', function() {
     )->toContain('12:00:00');
 });
 
-test('that the meridian is being returned in the error message when the meridiem is required', function() {
+test('that the meridian is being returned in the error message when the meridiem is required', function () {
     $sut = new Time12Hour(true);
 
     expect(
@@ -86,7 +86,7 @@ test('that the meridian is being returned in the error message when the meridiem
     )->toContain('AM');
 });
 
-test('that the a custom timeseparator is being returned in the error message', function() {
+test('that the a custom timeseparator is being returned in the error message', function () {
     $sut = new Time12Hour(true, '*');
 
     expect(
