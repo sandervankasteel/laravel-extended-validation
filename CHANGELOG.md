@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+### Changed
+
+### Removed
+
+## [0.1.0] - 11-12-2021 (First Release 🥳)
+
+### Added
+
 - Rule for Dutch postal codes
 - Rule for Dutch Social Security numbers
 - Rule for Dutch VAT numbers
