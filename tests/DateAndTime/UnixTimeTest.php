@@ -1,6 +1,6 @@
 <?php
 
-use SandervanKasteel\LaravelExtendedValidation\Rules\DateAndTime\UnixTime;
+use LaravelExtendedValidation\Rules\DateAndTime\UnixTime;
 
 test('that we can successfully validate a UNIX timestamp', function ($timestamp, $expected) {
     $sut = new UnixTime();

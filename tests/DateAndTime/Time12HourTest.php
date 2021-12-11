@@ -1,6 +1,6 @@
 <?php
 
-use SandervanKasteel\LaravelExtendedValidation\Rules\DateAndTime\Time12Hour;
+use LaravelExtendedValidation\Rules\DateAndTime\Time12Hour;
 
 test('that we can succesfully validate a time in the 12 hour format without meridiem', function ($timeString, $expectedResult) {
     $sut = new Time12Hour();

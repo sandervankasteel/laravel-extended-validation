@@ -1,6 +1,6 @@
 <?php
 
-use SandervanKasteel\LaravelExtendedValidation\Rules\Color\HexColor;
+use LaravelExtendedValidation\Rules\Color\HexColor;
 
 test('that we can successfully validate a hex color code', function ($hexColor, $valid) {
     $sut = new HexColor();

@@ -1,6 +1,6 @@
 <?php
 
-use SandervanKasteel\LaravelExtendedValidation\Rules\Locale\NL\Person\SocialSecurityNumber;
+use LaravelExtendedValidation\Rules\Locale\NL\Person\SocialSecurityNumber;
 
 test('that "111222333" is considered a correct social security number', function () {
     $sut = new SocialSecurityNumber();

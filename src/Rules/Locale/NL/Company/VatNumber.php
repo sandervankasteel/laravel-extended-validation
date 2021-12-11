@@ -1,13 +1,12 @@
 <?php
 
-namespace SandervanKasteel\LaravelExtendedValidation\Rules\Locale\NL\Company;
+namespace LaravelExtendedValidation\Rules\Locale\NL\Company;
 
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Str;
 
 class VatNumber implements Rule
 {
-
     /**
      * @inheritDoc
      */
@@ -16,17 +15,17 @@ class VatNumber implements Rule
         $value = Str::of($value)
             ->upper();
 
-        if(!$value->startsWith('NL')) {
+        if (! $value->startsWith('NL')) {
             return false;
         }
 
-        if(!$value->contains('B')) {
+        if (! $value->contains('B')) {
             return false;
         }
 
         $splittedValue = $value->split('/B/');
 
-        if(strlen($splittedValue->get(1)) !== 2) {
+        if (strlen($splittedValue->get(1)) !== 2) {
             return false;
         }
 
@@ -51,7 +50,6 @@ class VatNumber implements Rule
 
             $total += ($item) * $multiplier;
         });
-
 
         return ($total % 11) === 0;
     }
