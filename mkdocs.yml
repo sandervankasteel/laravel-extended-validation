@@ -31,6 +31,7 @@ extra:
   locals: &localesNl
     - locale/NL/Address/PostalCode.md
     - locale/NL/Person/SocialSecurityNumber.md
+    - locale/NL/Company/VatNumber.md
 
 plugins:
   - search: { }
