@@ -44,6 +44,6 @@ class SocialSecurityNumber implements Rule
      */
     public function message()
     {
-        return 'The :attribute is not considered a valid Burger Service Nummer (Social Security number)';
+        return 'The :attribute is not a valid Burger Service Nummer (Social Security number)';
     }
 }
