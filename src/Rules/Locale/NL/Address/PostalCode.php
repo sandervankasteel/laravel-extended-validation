@@ -64,9 +64,9 @@ class PostalCode implements Rule
     public function message()
     {
         if ($this->mayContainSpace) {
-            return "The :attribute must be in the '1234 AB' format";
+            return ":attribute must be in the '1234 AB' format";
         }
 
-        return "The :attribute must be in the '1234AB' format";
+        return ":attribute must be in the '1234AB' format";
     }
 }
