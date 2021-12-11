@@ -2,21 +2,20 @@
 
 use SandervanKasteel\LaravelExtendedValidation\Rules\Color\HexColor;
 
-test('that we can successfully validate a hex color code', function($hexColor, $valid) {
+test('that we can successfully validate a hex color code', function ($hexColor, $valid) {
     $sut = new HexColor();
 
     expect(
         $sut->passes('some-attribute', $hexColor)
     )->toBe($valid);
-
 })->with([
-    [ '00ff00', true ],
-    [ '#00ff00', true ],
-    [ '#fff', true ],
-    [ '#ff00ff00', false ],
+    ['00ff00', true],
+    ['#00ff00', true],
+    ['#fff', true],
+    ['#ff00ff00', false],
 ]);
 
-test('that the message function returns the attribute in the error message', function() {
+test('that the message function returns the attribute in the error message', function () {
     $sut = new HexColor();
 
     $sut->passes('some-attribute', '#1234567890');
