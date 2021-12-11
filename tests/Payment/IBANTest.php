@@ -1,6 +1,6 @@
 <?php
 
-use SandervanKasteel\LaravelExtendedValidation\Rules\Payment\IBAN;
+use LaravelExtendedValidation\Rules\Payment\IBAN;
 
 test('that we can successfully validate an IBAN number', function ($ibanNumber, $valid) {
     $sut = new IBAN();

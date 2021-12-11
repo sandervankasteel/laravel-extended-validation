@@ -1,6 +1,6 @@
 <?php
 
-namespace SandervanKasteel\LaravelExtendedValidation\Rules\DateAndTime;
+namespace LaravelExtendedValidation\Rules\DateAndTime;
 
 use DateTime;
 use Illuminate\Contracts\Validation\Rule;

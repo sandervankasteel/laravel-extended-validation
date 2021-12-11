@@ -1,6 +1,6 @@
 <?php
 
-use SandervanKasteel\LaravelExtendedValidation\Rules\Locale\NL\Address\PostalCode;
+use LaravelExtendedValidation\Rules\Locale\NL\Address\PostalCode;
 
 test('Test that a valid Dutch postalcode is considered correct', function () {
     $sut = new PostalCode();

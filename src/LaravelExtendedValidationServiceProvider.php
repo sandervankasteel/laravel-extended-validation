@@ -1,6 +1,6 @@
 <?php
 
-namespace SandervanKasteel\LaravelExtendedValidation;
+namespace LaravelExtendedValidation;
 
 use Illuminate\Support\ServiceProvider;
 

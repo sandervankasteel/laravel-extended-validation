@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\DB;
-use SandervanKasteel\LaravelExtendedValidation\Rules\Database\MoreThanValue;
+use LaravelExtendedValidation\Rules\Database\MoreThanValue;
 
 beforeEach(function () {
     $this->loadMigrationsFrom(__DIR__.'/migrations');

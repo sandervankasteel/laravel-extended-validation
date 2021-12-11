@@ -1,6 +1,6 @@
 <?php
 
-use SandervanKasteel\LaravelExtendedValidation\Rules\DateAndTime\Time24Hour;
+use LaravelExtendedValidation\Rules\DateAndTime\Time24Hour;
 
 test('that we can succesfully validate a time in the 24-hour format', function ($timeString, $expectedResult) {
     $sut = new Time24Hour();

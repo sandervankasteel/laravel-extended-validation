@@ -1,6 +1,6 @@
 <?php
 
-namespace SandervanKasteel\LaravelExtendedValidation\Rules\Locale\NL\Person;
+namespace LaravelExtendedValidation\Rules\Locale\NL\Person;
 
 use Illuminate\Contracts\Validation\Rule;
 

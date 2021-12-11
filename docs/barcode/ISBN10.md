@@ -1,5 +1,5 @@
 # ISBN10
-### `SandervanKasteel\LaravelExtendedValidation\Rules\Payment\ISBN10`
+### `LaravelExtendedValidation\Rules\Barcode\ISBN10`
 
 This validation rules checks if the posted input is a valid ISBN (10) number and validated according to the International 
 ISBN Agency standard.

@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "SandervanKasteel\\LaravelExtendedValidation\\": "src/"
+            "LaravelExtendedValidation\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SandervanKasteel\\LaravelExtendedValidation\\Tests\\": "tests/"
+            "LaravelExtendedValidation\\Tests\\": "tests/"
         }
     },
     "extra": {

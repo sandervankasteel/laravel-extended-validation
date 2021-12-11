@@ -1,6 +1,6 @@
 <?php
 
-namespace SandervanKasteel\LaravelExtendedValidation\Rules\Payment;
+namespace LaravelExtendedValidation\Rules\Payment;
 
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Str;

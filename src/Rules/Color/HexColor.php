@@ -1,6 +1,6 @@
 <?php
 
-namespace SandervanKasteel\LaravelExtendedValidation\Rules\Color;
+namespace LaravelExtendedValidation\Rules\Color;
 
 use Illuminate\Contracts\Validation\Rule;
 

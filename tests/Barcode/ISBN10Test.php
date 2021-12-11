@@ -1,6 +1,6 @@
 <?php
 
-use SandervanKasteel\LaravelExtendedValidation\Rules\Barcode\ISBN10;
+use LaravelExtendedValidation\Rules\Barcode\ISBN10;
 
 test('that we can successfully validate an ISBN-10 number', function ($isbn, $expectedValue) {
     $sut = new ISBN10();

@@ -1,6 +1,6 @@
 <?php
 
-namespace SandervanKasteel\LaravelExtendedValidation\Rules\Barcode;
+namespace LaravelExtendedValidation\Rules\Barcode;
 
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Str;
