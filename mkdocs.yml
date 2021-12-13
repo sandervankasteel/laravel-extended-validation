@@ -58,7 +58,8 @@ nav:
           - locale/NL/Address/PostalCode.md
           - locale/NL/Person/SocialSecurityNumber.md
           - locale/NL/Company/VatNumber.md
-
+  - 'Network':
+      - network/IPv4.md
   - 'Payment':
       - payment/IBAN.md
 
