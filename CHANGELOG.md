@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+## [0.1.1] - 13-12-2021
+
+- Fixed issue with loading Service Provider
+
 ## [0.1.0] - 11-12-2021 (First Release 🥳)
 
 ### Added
