@@ -25,19 +25,19 @@ class IPv4 implements Rule
         $octets = Str::of($value)
             ->explode('.');
 
-        if($octets->count() !== 4) {
+        if ($octets->count() !== 4) {
             return false;
         }
 
         foreach ($octets as $octet) {
             $octet = (int) $octet;
 
-            if($octet < 0 || $octet > 255) {
+            if ($octet < 0 || $octet > 255) {
                 return false;
             }
         }
 
-        if($this->isInPrivateIpAddressRange($value) && !$this->allowPrivateIpAddress) {
+        if ($this->isInPrivateIpAddressRange($value) && ! $this->allowPrivateIpAddress) {
             return false;
         }
 
@@ -53,11 +53,11 @@ class IPv4 implements Rule
     {
         $ipAddressLong = ip2long($ipAddress);
 
-        foreach($this->privateIPRanges as $startAddress => $endAddress) {
+        foreach ($this->privateIPRanges as $startAddress => $endAddress) {
             $startAddressLong = ip2long($startAddress);
             $endAddressLong = ip2long($endAddress);
 
-            if($ipAddressLong >= $startAddressLong && $ipAddressLong <= $endAddressLong) {
+            if ($ipAddressLong >= $startAddressLong && $ipAddressLong <= $endAddressLong) {
                 return true;
             }
         }
