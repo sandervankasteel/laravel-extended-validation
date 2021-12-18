@@ -60,6 +60,7 @@ nav:
           - locale/NL/Company/VatNumber.md
   - 'Network':
       - network/IPv4.md
+      - network/IPv6.md
   - 'Payment':
       - payment/IBAN.md
 

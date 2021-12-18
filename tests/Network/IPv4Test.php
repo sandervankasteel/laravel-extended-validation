@@ -61,7 +61,7 @@ test('that non-sensical IP addresses are considered invalid', function ($ipAddre
     ['350.66.44.33'],
 ]);
 
-test('that the attribute is return in the error messsage', function () {
+test('that the attribute is return in the error message', function () {
     $sut = new IPv4();
 
     expect(
