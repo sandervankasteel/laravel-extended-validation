@@ -61,6 +61,7 @@ nav:
   - 'Network':
       - network/IPv4.md
       - network/IPv6.md
+      - network/MacAddress.md
   - 'Payment':
       - payment/IBAN.md
 
