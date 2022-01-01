@@ -54,6 +54,8 @@ nav:
   - 'Locales':
       - 'BE':
           - locale/BE/Address/PostalCode.md
+      - 'DE':
+          - locale/DE/Company/VatNumber.md
       - 'LU':
             - locale/LU/Company/VatNumber.md
       - 'NL':
