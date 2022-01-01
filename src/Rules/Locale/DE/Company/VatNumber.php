@@ -16,7 +16,7 @@ class VatNumber implements Rule
             ->upper()
             ->replace(' ', '');
 
-        return $string->startsWith('DE') && $string->test('/[0-9]{9}/');
+        return $string->startsWith('DE') && $string->match('/[0-9]{9}/')->isNotEmpty();
     }
 
     /**
