@@ -13,6 +13,8 @@ test('that we can successfully validate VAT numbers', function ($vatNumber, $exp
     ['BE0809387596', true],
     ['BE0418905287', true],
     ['BE0999999923', false],
+    ['BE099999923', false],
+    ['NL099999923', false],
 ]);
 
 test('that we get the attribute back from the error message', function () {
