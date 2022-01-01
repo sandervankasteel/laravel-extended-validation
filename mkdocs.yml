@@ -57,6 +57,8 @@ nav:
           - locale/BE/Company/VatNumber.md
       - 'DE':
           - locale/DE/Company/VatNumber.md
+      - 'FR':
+          - locale/FR/Company/VatNumber.md
       - 'LU':
           - locale/LU/Company/VatNumber.md
       - 'NL':
