@@ -17,6 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added French VAT number validation
 - Added UK Postal Code validation
 - Added German Postal Code validation
+- Added American Express validation rule
+- Added MasterCard validation rule
+- Added Visa validation rule
 
 ### Changed
 
