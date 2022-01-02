@@ -60,6 +60,7 @@ nav:
           - locale/DE/Address/PostalCode.md
       - 'FR':
           - locale/FR/Company/VatNumber.md
+          - locale/FR/Address/PostalCode.md
       - 'LU':
           - locale/LU/Company/VatNumber.md
       - 'NL':
