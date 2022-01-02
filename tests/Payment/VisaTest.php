@@ -20,6 +20,9 @@ test('that we can successfully validate an Visa card number', function ($number,
     ['4111 1111 1111 1119', false],
     ['4999 9999 9999 9108', false],
     ['4999 9999 9999 9109', false],
+    ['5999 9999 9999 9109', false],
+    ['5999 9999 9999 910', false],
+    ['5999 9999 9999 91099', false],
 ]);
 
 test('that the attribute is being returned in the error message', function () {
