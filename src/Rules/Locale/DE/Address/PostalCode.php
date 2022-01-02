@@ -21,11 +21,11 @@ class PostalCode implements Rule
     {
         $postalCode = Str::of($value);
 
-        if($postalCode->length() !== 5) {
+        if ($postalCode->length() !== 5) {
             return false;
         }
 
-        if($postalCode->startsWith($this->invalidRanges)) {
+        if ($postalCode->startsWith($this->invalidRanges)) {
             return false;
         }
 
@@ -38,6 +38,6 @@ class PostalCode implements Rule
      */
     public function message()
     {
-        return ":attribute does not contain a valid German postalcode.";
+        return ':attribute does not contain a valid German postalcode.';
     }
 }
