@@ -12,6 +12,7 @@ test('that we can successfully validate a French postal code', function ($postal
     ['64205', true],
     ['64200', true],
     ['00100', true], // Military
+    ['98000', false], // Monaco
     ['96000', false],
     ['1234', false],
     ['123456', false],
