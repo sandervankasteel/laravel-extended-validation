@@ -15,6 +15,8 @@ test('that we can successfully validate a German postal code', function ($postal
     ['05100', false],
     ['43100', false],
     ['62100', false],
+    ['1234', false],
+    ['123456', false],
 ]);
 
 test('that we get the attribute back from the error message', function () {
