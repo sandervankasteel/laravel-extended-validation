@@ -17,6 +17,8 @@ test('that we can successfully validate an MasterCard card number', function ($n
     ['2223 0000 1000 0005', true],
     ['5431 1111 1111 1228', true],
     ['5999 9999 9999 9108', false],
+    ['5999 9999 9999 910', false],
+    ['5999 9999 9999 91089', false],
 ]);
 
 test('that the attribute is being returned in the error message', function () {
