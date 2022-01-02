@@ -74,7 +74,10 @@ nav:
       - network/IPv6.md
       - network/MacAddress.md
   - 'Payment':
+      - payment/AmericanExpress.md
       - payment/IBAN.md
+      - payment/MasterCard.md
+      - payment/Visa.md
 
 markdown_extensions:
   - admonition: { }
