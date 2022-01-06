@@ -3,7 +3,7 @@ name: Static analysis
 on: [push]
 
 jobs:
-  php-cs-fixer:
+  larastan:
     runs-on: ubuntu-latest
 
     steps:
