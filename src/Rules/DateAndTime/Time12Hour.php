@@ -37,7 +37,7 @@ class Time12Hour implements Rule
                 ->upper()
                 ->match('[AM|PM]');
 
-            if ((string) $meridiem === '') {
+            if ($meridiem->length() === 0) {
                 return false;
             }
         }
