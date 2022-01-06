@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Added EAN8 validation rule
+
 ### Added
 
 - Added IPv4 validation rule
