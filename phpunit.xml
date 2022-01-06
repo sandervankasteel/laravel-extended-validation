@@ -19,6 +19,7 @@
         </include>
         <exclude>
             <directory suffix=".php">./tests/Database/migrations</directory>
+            <file>src/LaravelExtendedValidationServiceProvider.php</file>
         </exclude>
         <report>
             <clover outputFile="clover-coverage.xml"/>
