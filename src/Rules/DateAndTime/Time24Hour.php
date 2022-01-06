@@ -8,9 +8,12 @@ use Illuminate\Support\Str;
 
 class Time24Hour implements Rule
 {
+    /**
+     * @var string
+     */
     private $timeSeparator;
 
-    public function __construct($timeSeparator = ':')
+    public function __construct(string $timeSeparator = ':')
     {
         $this->timeSeparator = $timeSeparator;
     }

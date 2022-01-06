@@ -36,7 +36,7 @@ class HexColor implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return 'The :attribute does not contain a valid hex color';
     }

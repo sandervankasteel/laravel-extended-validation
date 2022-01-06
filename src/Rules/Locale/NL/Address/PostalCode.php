@@ -6,8 +6,14 @@ use Illuminate\Contracts\Validation\Rule;
 
 class PostalCode implements Rule
 {
+    /**
+     * @var bool
+     */
     private $mayContainSpace;
 
+    /**
+     * @var string[]
+     */
     private $blockedlistedLetterSequences = [
         'SA',
         'SD',
@@ -26,7 +32,7 @@ class PostalCode implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $value = trim($value);
 
@@ -61,7 +67,7 @@ class PostalCode implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         if ($this->mayContainSpace) {
             return ":attribute must be in the '1234 AB' format";

@@ -10,7 +10,7 @@ class AmericanExpress implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $number = Str::of($value)
             ->replace(' ', '');
@@ -27,10 +27,10 @@ class AmericanExpress implements Rule
         $checkDigit = $number->substr(14, 1);
         $digits = collect(str_split($number->substr(0, 14)));
 
-        $digits->reverse()->each(function ($number, $index) use (&$total, $value) {
+        $digits->reverse()->each(function ($number, $index) use (&$total) {
             $multiplier = ($index % 2 === 0) ? 1 : 2;
 
-            $subtotal = $number * $multiplier;
+            $subtotal = (int) $number * $multiplier;
 
             if ($subtotal > 9) {
                 $subtotal -= 9;
@@ -39,13 +39,13 @@ class AmericanExpress implements Rule
             $total += $subtotal;
         });
 
-        return abs(bcmod($total - 10, 10) - 10) == (string) $checkDigit;
+        return abs(bcmod((string) ($total - 10), '10') - 10) == (string) $checkDigit;
     }
 
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid American Express credit card number';
     }

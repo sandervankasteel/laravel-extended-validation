@@ -6,6 +6,9 @@ use Illuminate\Contracts\Validation\Rule;
 
 class PostalCode implements Rule
 {
+    /**
+     * @var int[]
+     */
     private $specialPostalCodes = [
         612, // Sinterklaas
         1005, // Verenigde Vergadering van de Gemeenschappelijke
@@ -53,9 +56,12 @@ class PostalCode implements Rule
         9099, // Gent X
     ];
 
+    /**
+     * @var bool
+     */
     private $checkForSpecialPostalCodes;
 
-    public function __construct($checkForSpecialPostalCodes = false)
+    public function __construct(bool $checkForSpecialPostalCodes = false)
     {
         $this->checkForSpecialPostalCodes = $checkForSpecialPostalCodes;
     }

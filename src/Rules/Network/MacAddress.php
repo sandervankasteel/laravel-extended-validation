@@ -7,9 +7,12 @@ use Illuminate\Support\Str;
 
 class MacAddress implements Rule
 {
+    /**
+     * @var string
+     */
     private $separatorSign;
 
-    public function __construct($separatorSign = ':')
+    public function __construct(string $separatorSign = ':')
     {
         $this->separatorSign = $separatorSign;
     }

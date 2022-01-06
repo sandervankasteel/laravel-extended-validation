@@ -26,11 +26,15 @@ class IBAN implements Rule
         return bcmod($value, '97') === '1';
     }
 
-    public function message()
+    public function message(): string
     {
         return 'The :attribute does not contain a valid IBAN number';
     }
 
+    /**
+     * @param string[] $matches
+     * @return string
+     */
     private function transposeLettersToNumbers(array $matches): string
     {
         $alphabet = range('A', 'Z');

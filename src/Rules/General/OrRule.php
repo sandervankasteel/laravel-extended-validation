@@ -8,12 +8,15 @@ use Illuminate\Support\Arr;
 
 class OrRule implements Rule
 {
+    /**
+     * @var Rule[]
+     */
     private $rules;
 
     /**
      * @param Rule[] $rules
      */
-    public function __construct($rules = [])
+    public function __construct(array $rules = [])
     {
         $this->rules = $rules;
     }

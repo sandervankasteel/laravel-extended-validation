@@ -27,7 +27,7 @@ class ISBN10 implements Rule
         $values->each(static function ($item, $index) use (&$total) {
             $multiplier = 10 - $index;
 
-            $total += ($item) * $multiplier;
+            $total += (int) $item * $multiplier;
         });
 
         return ($total % 11) === 0;
@@ -36,7 +36,7 @@ class ISBN10 implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid ISBN10 number';
     }

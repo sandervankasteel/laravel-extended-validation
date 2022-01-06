@@ -10,7 +10,7 @@ class MasterCard implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $number = Str::of($value)
             ->replace(' ', '');
@@ -30,7 +30,7 @@ class MasterCard implements Rule
         $digits->reverse()->each(function ($number, $index) use (&$total) {
             $multiplier = ($index % 2 === 0) ? 2 : 1;
 
-            $subtotal = $number * $multiplier;
+            $subtotal = (int) $number * $multiplier;
 
             if ($subtotal > 9) {
                 $subtotal -= 9;
@@ -39,13 +39,13 @@ class MasterCard implements Rule
             $total += $subtotal;
         });
 
-        return abs(bcmod($total, 10) - 10) == (string) $checkDigit;
+        return abs(bcmod((string) $total, '10') - 10) == (string) $checkDigit;
     }
 
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid MasterCard credit card number';
     }

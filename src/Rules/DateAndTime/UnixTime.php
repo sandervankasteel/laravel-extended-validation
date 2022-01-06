@@ -13,7 +13,7 @@ class UnixTime implements Rule
             return false;
         }
 
-        $dateTime = DateTime::createFromFormat('U', $value);
+        $dateTime = DateTime::createFromFormat('U', (string) $value);
 
         return $dateTime !== false;
     }

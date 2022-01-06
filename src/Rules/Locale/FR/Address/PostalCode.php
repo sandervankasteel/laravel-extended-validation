@@ -7,6 +7,9 @@ use Illuminate\Support\Str;
 
 class PostalCode implements Rule
 {
+    /**
+     * @var string[]
+     */
     private $startingRanges = [
         '00', // Military / Armed forces
         '01',
@@ -106,7 +109,7 @@ class PostalCode implements Rule
         '95',
     ];
 
-    public function __construct($allowMonaco = false)
+    public function __construct(bool $allowMonaco = false)
     {
         if ($allowMonaco) {
             $this->startingRanges[] = '98';
@@ -116,7 +119,7 @@ class PostalCode implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $postalCode = Str::of($value);
 
@@ -130,7 +133,7 @@ class PostalCode implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid French postalcode.';
     }

@@ -7,6 +7,9 @@ use Illuminate\Support\Str;
 
 class PostalCode implements Rule
 {
+    /**
+     * @var string[]
+     */
     private $invalidRanges = [
         '00', // Not assigned
         '05', // Reserved
@@ -17,7 +20,7 @@ class PostalCode implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $postalCode = Str::of($value);
 
@@ -36,7 +39,7 @@ class PostalCode implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid German postalcode.';
     }

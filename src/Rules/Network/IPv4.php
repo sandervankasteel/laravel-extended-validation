@@ -7,15 +7,21 @@ use Illuminate\Support\Str;
 
 class IPv4 implements Rule
 {
+    /**
+     * @var string[]
+     */
     private $privateIPRanges = [
         '10.0.0.0' => '10.255.255.255',
         '172.16.0.0' => '172.16.255.255',
         '192.168.0.0' => '192.168.255.255',
     ];
 
+    /**
+     * @var bool
+     */
     private $allowPrivateIpAddress;
 
-    public function __construct($allowPrivateIpAddress = false)
+    public function __construct(bool $allowPrivateIpAddress = false)
     {
         $this->allowPrivateIpAddress = $allowPrivateIpAddress;
     }
@@ -44,12 +50,12 @@ class IPv4 implements Rule
         return true;
     }
 
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid IP address';
     }
 
-    private function isInPrivateIpAddressRange($ipAddress)
+    private function isInPrivateIpAddressRange(string $ipAddress): bool
     {
         $ipAddressLong = ip2long($ipAddress);
 
