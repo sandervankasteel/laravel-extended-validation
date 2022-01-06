@@ -10,7 +10,7 @@ class VatNumber implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         /** @var string $numbers */
         $numbers = Str::of($value)
@@ -32,7 +32,7 @@ class VatNumber implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid Belgium VAT number';
     }

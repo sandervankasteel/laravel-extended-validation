@@ -8,18 +8,33 @@ use Illuminate\Support\Facades\DB;
 class MustBeEqualValue implements Rule
 {
     /**
-     * @var mixed|string
+     * @var string
      */
     private $column;
 
+    /**
+     * @var string
+     */
     private $table;
 
+    /**
+     * @var string
+     */
     private $identifierColumn;
 
+    /**
+     * @var string
+     */
     private $uniqueIdentifier;
 
+    /**
+     * @var mixed
+     */
     private $foundValue;
 
+    /**
+     * @var mixed
+     */
     private $postedValue;
 
     /**
@@ -27,7 +42,7 @@ class MustBeEqualValue implements Rule
      *
      * @return void
      */
-    public function __construct($table, $column, $identifierColumn, $uniqueIdentifier)
+    public function __construct(string $table, string $column, string $identifierColumn, string $uniqueIdentifier)
     {
         $this->table = $table;
         $this->column = $column;
@@ -43,7 +58,7 @@ class MustBeEqualValue implements Rule
      * @param  mixed  $value
      * @return bool
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $result = DB::table($this->table)
             ->where($this->identifierColumn, $this->uniqueIdentifier)
@@ -64,7 +79,7 @@ class MustBeEqualValue implements Rule
      *
      * @return string
      */
-    public function message()
+    public function message(): string
     {
         return "The found value '{$this->foundValue}' does not match '{$this->postedValue}'";
     }

@@ -28,7 +28,7 @@ class ISBN13 implements Rule
             // We use a multiplier of 1 for an odd index and 3 for an even index
             $multiplier = ($index % 2 === 0) ? 1 : 3;
 
-            $total += $item * $multiplier;
+            $total += (int) $item * $multiplier;
         });
 
         return ($total % 10) === 0;

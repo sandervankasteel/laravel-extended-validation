@@ -1,0 +1,24 @@
+name: Check code style
+
+on: [push]
+
+jobs:
+  php-cs-fixer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 7.3
+          extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, intl, gd, iconv, xdebug
+          coverage: xdebug
+
+      - name: Install dependencies
+        run: composer install
+
+      - name: Run Larastan
+        run: ./vendor/bin/phpstan analyse

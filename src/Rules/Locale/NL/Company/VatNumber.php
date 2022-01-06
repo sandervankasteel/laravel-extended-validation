@@ -48,7 +48,7 @@ class VatNumber implements Rule
                 return;
             }
 
-            $total += ($item) * $multiplier;
+            $total += (int) $item * $multiplier;
         });
 
         return ($total % 11) === 0;

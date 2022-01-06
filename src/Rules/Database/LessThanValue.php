@@ -7,17 +7,32 @@ use Illuminate\Support\Facades\DB;
 
 class LessThanValue implements Rule
 {
+    /**
+     * @var string
+     */
     private $column;
 
+    /**
+     * @var string
+     */
     private $table;
 
+    /**
+     * @var string
+     */
     private $identifierColumn;
 
+    /**
+     * @var string
+     */
     private $uniqueIdentifier;
 
+    /**
+     * @var mixed
+     */
     private $foundValue;
 
-    public function __construct($table, $column, $identifierColumn, $uniqueIdentifier)
+    public function __construct(string $table, string $column, string $identifierColumn, string $uniqueIdentifier)
     {
         $this->table = $table;
         $this->column = $column;
@@ -29,7 +44,7 @@ class LessThanValue implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $res = DB::table($this->table)
             ->where($this->identifierColumn, $this->uniqueIdentifier)
@@ -47,7 +62,7 @@ class LessThanValue implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return "$this->column can not be more then $this->foundValue";
     }

@@ -14,7 +14,7 @@ class SocialSecurityNumber implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         if (strlen($value) !== 9) {
             return false;
@@ -28,12 +28,12 @@ class SocialSecurityNumber implements Rule
 
             // For the last number, we need to multiple by -1 instead of the inverse of the index.
             if ($index === 8) {
-                $total += ($item) * -1;
+                $total += (int) $item  * -1;
 
                 return;
             }
 
-            $total += ($item) * $multiplier;
+            $total += (int) $item * $multiplier;
         });
 
         return ($total % 11) === 0;
@@ -42,7 +42,7 @@ class SocialSecurityNumber implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return 'The :attribute is not a valid Burger Service Nummer (Social Security number)';
     }

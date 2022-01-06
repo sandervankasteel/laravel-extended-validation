@@ -7,9 +7,12 @@ use Illuminate\Support\Str;
 
 class PostalCode implements Rule
 {
+    /**
+     * @var bool
+     */
     private $allowSpecialCases;
 
-    public function __construct($allowSpecialCases = false)
+    public function __construct(bool $allowSpecialCases = false)
     {
         $this->allowSpecialCases = $allowSpecialCases;
     }
@@ -17,7 +20,7 @@ class PostalCode implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $regex = '/^[A-Z]{1,2}[0-9][A-Z0-9]? ?[0-9][A-Z]{2}$/';
 
@@ -31,7 +34,7 @@ class PostalCode implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         if ($this->allowSpecialCases) {
             return ':attribute must contain a valid UK (or British Overseas Territories) postal code';

@@ -8,11 +8,17 @@ use Illuminate\Support\Str;
 
 class Time12Hour implements Rule
 {
+    /**
+     * @var string
+     */
     private $timeSeparator;
 
+    /**
+     * @var bool
+     */
     private $requiresMeridiem;
 
-    public function __construct($requiresMeridiem = false, $timeSeparator = ':')
+    public function __construct(bool $requiresMeridiem = false, string $timeSeparator = ':')
     {
         $this->timeSeparator = $timeSeparator;
 
@@ -31,7 +37,7 @@ class Time12Hour implements Rule
                 ->upper()
                 ->match('[AM|PM]');
 
-            if ($meridiem === '') {
+            if ((string) $meridiem === '') {
                 return false;
             }
         }

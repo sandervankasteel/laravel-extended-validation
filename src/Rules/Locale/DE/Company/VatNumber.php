@@ -10,7 +10,7 @@ class VatNumber implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $string = Str::of($value)
             ->upper()
@@ -22,7 +22,7 @@ class VatNumber implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid German VAT number';
     }

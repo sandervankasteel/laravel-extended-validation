@@ -10,7 +10,7 @@ class Visa implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $number = Str::of($value)
             ->replace(' ', '');
@@ -36,7 +36,7 @@ class Visa implements Rule
                 $multiplier = ($index % 2 === 0) ? 1 : 2;
             }
 
-            $subtotal = $number * $multiplier;
+            $subtotal = (int) $number * $multiplier;
 
             if ($subtotal > 9) {
                 $subtotal -= 9;
@@ -45,13 +45,13 @@ class Visa implements Rule
             $total += $subtotal;
         });
 
-        return abs(bcmod($total, 10) - 10) == (string) $checkDigit;
+        return abs(bcmod((string) $total, "10") - 10) == (string) $checkDigit;
     }
 
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid VISA credit card number';
     }
