@@ -6,9 +6,7 @@ use Illuminate\Support\ServiceProvider;
 
 class LaravelExtendedValidationServiceProvider extends ServiceProvider
 {
-
     public function boot(): void
     {
-
     }
 }

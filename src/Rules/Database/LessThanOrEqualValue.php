@@ -32,7 +32,6 @@ class LessThanOrEqualValue implements Rule
      */
     private $foundValue;
 
-
     public function __construct(string $table, string $column, string $identifierColumn, string $uniqueIdentifier)
     {
         $this->table = $table;

@@ -28,7 +28,7 @@ class SocialSecurityNumber implements Rule
 
             // For the last number, we need to multiple by -1 instead of the inverse of the index.
             if ($index === 8) {
-                $total += (int) $item  * -1;
+                $total += (int) $item * -1;
 
                 return;
             }

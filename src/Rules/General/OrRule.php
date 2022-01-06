@@ -9,7 +9,7 @@ use Illuminate\Support\Arr;
 class OrRule implements Rule
 {
     /**
-     * @var Rule[] $rules
+     * @var Rule[]
      */
     private $rules;
 

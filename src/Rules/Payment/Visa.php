@@ -45,7 +45,7 @@ class Visa implements Rule
             $total += $subtotal;
         });
 
-        return abs(bcmod((string) $total, "10") - 10) == (string) $checkDigit;
+        return abs(bcmod((string) $total, '10') - 10) == (string) $checkDigit;
     }
 
     /**
