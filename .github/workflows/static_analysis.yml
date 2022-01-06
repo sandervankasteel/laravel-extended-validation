@@ -1,4 +1,4 @@
-name: Check code style
+name: Static analysis
 
 on: [push]
 
