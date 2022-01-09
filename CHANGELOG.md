@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - UPC-E validation rule
 - JAN (Japanese Article Number) validation rule
 - ASIN validation rule
+- Added TimeZoneAbbr Rule
 
 ### Changed
 

@@ -58,6 +58,7 @@ nav:
   - 'Date and time':
       - dateandtime/Time12Hour.md
       - dateandtime/Time24Hour.md
+      - dateandtime/TimeZoneAbbr.md
       - dateandtime/UnixTime.md
   - 'Locales':
       - 'BE':
