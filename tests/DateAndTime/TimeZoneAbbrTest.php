@@ -6,7 +6,7 @@ test('that we can successfully validate timezone abbreviations', function ($time
     $sut = new TimeZoneAbbr();
 
     expect(
-        $sut->passes('some-atttribute', $timezone)
+        $sut->passes('some-attribute', $timezone)
     )->toBe($expectedOutput);
 })->with([
     ['acdt', true],
@@ -137,4 +137,14 @@ test('that we get the attribute back in the error message', function () {
     expect(
         $sut->message()
     )->toContain(':attribute');
+});
+
+test('that we can also also validate timezones which are not in the $acceptedTimeZones array', function () {
+    $sut = new TimeZoneAbbr();
+
+    $sut->acceptedTimezones = [];
+
+    expect(
+       $sut->passes('some-attribute', 'cest')
+   )->toBe(true);
 });
