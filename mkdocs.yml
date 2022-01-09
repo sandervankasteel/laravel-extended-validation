@@ -37,6 +37,7 @@ nav:
   - 'General':
       - general/OrRule.md
   - 'Barcode':
+      - barcode/ASIN.md
       - barcode/EAN5.md
       - barcode/EAN8.md
       - barcode/EAN13.md
