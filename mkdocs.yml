@@ -42,6 +42,7 @@ nav:
       - barcode/EAN13.md
       - barcode/ISBN10.md
       - barcode/ISBN13.md
+      - barcode/ISMN.md
       - barcode/JAN.md
       - barcode/UPC-A.md
       - barcode/UPC-E.md
