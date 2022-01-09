@@ -4,7 +4,6 @@ namespace LaravelExtendedValidation\Rules\Barcode;
 
 class JAN implements \Illuminate\Contracts\Validation\Rule
 {
-
     /**
      * @inheritDoc
      */
@@ -18,7 +17,7 @@ class JAN implements \Illuminate\Contracts\Validation\Rule
 
         $countryCode = $barcode->slice(0, 2)->join('');
 
-        if($countryCode !== "45" && $countryCode !== "49") {
+        if ($countryCode !== '45' && $countryCode !== '49') {
             return false;
         }
 
