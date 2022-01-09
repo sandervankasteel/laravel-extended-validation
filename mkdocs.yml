@@ -43,6 +43,7 @@ nav:
       - barcode/ISBN10.md
       - barcode/ISBN13.md
       - barcode/UPC-A.md
+      - barcode/UPC-E.md
   - 'Color':
       - color/HexColor.md
   - 'Database':
