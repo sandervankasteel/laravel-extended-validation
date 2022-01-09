@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+### Changed
+
+### Removed
+
+
+## [0.3.0] - 09-01-2022
+
+### Added
+
 - EAN8 validation rule
 - EAN5 validation rule
 - EAN13 validation rule
@@ -16,10 +25,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - JAN (Japanese Article Number) validation rule
 - ASIN validation rule
 - Added TimeZoneAbbr Rule
-
-### Changed
-
-### Removed
 
 
 ## [0.2.0] - 02-01-2022
