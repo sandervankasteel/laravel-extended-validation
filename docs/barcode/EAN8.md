@@ -1,7 +1,7 @@
 # EAN8
 ### `LaravelExtendedValidation\Rules\Barcode\EAN8`
 
-This validation rules checks if the posted input is a valid EAN 108 number.
+This validation rules checks if the posted input is a valid EAN-8 number.
 
 Valid examples are:
 
