@@ -6,7 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Added EAN8 validation rule
+### Added
+
+- EAN8 validation rule
+
+### Changed
+
+### Removed
+
+
+## [0.2.0] - 02-01-2022
 
 ### Added
 
@@ -23,9 +32,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added MasterCard validation rule
 - Added Visa validation rule
 
-### Changed
-
-### Removed
 
 ## [0.1.1] - 13-12-2021
 
