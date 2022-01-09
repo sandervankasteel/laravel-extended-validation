@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - EAN8 validation rule
 - EAN5 validation rule
+- EAN13 validation rule
 
 ### Changed
 
