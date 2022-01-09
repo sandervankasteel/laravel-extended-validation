@@ -19,6 +19,7 @@ test('That we can successfully validate an ISMN number', function ($ismnNumber, 
     ['9790230671188', false],
     ['979-0-060-11561', false],
     ['979-0-060-11561-54', false],
+    ['978-0-060-11561-5', false],
 ]);
 
 test('that the attribute is being returned in the error message', function () {
