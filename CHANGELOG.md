@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - EAN5 validation rule
 - EAN13 validation rule
 - UPC-A validation rule
+- UPC-E validation rule
 
 ### Changed
 
