@@ -2,22 +2,40 @@
 
 namespace LaravelExtendedValidation\Rules\Barcode;
 
-class EAN13 implements \Illuminate\Contracts\Validation\Rule
-{
+use Illuminate\Contracts\Validation\Rule;
 
+class EAN13 implements Rule
+{
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
-        // TODO: Implement passes() method.
+        $barcode = collect(str_split($value));
+
+        if ($barcode->count() !== 13) {
+            return false;
+        }
+
+        $checkSumChar = (int) $barcode->last();
+
+        $total = 0;
+        $barcode->slice(0, 12)->each(function ($number, $index) use (&$total) {
+            $multiplier = ($index % 2 === 0) ? 1 : 3;
+
+            $total += (int) $number * $multiplier;
+        });
+
+        $checksum = (int) (ceil($total / 10) * 10) - $total;
+
+        return $checkSumChar === $checksum;
     }
 
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
-        // TODO: Implement message() method.
+        return ':attribute does not contain a valid EAN-13 code';
     }
 }
