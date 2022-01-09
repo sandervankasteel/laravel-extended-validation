@@ -1,5 +1,5 @@
 # EAN5
-### `LaravelExtendedValidation\Rules\Barcode\EAN8`
+### `LaravelExtendedValidation\Rules\Barcode\EAN5`
 
 This validation rules checks if the posted input is a valid EAN-5 number.
 
