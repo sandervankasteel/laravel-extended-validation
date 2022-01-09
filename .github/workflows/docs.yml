@@ -1,4 +1,4 @@
-name: Docs generation
+name: Documentation generation and deploying
 on:
   release:
     types: [ published ]
