@@ -49,6 +49,8 @@ nav:
       - barcode/UPC-E.md
   - 'Color':
       - color/HexColor.md
+      - color/RGB.md
+      - color/RGBA.md
   - 'Database':
       - database/LessThanValue.md
       - database/LessThanOrEqualValue.md
