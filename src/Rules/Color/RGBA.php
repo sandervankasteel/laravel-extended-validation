@@ -46,7 +46,7 @@ class RGBA implements Rule
 
         $transparancyCode = (string) $rgb->match('(\d\.\d)');
         // Check if transparancy is present OR (the transparancy amount is below 0 OR above 1)
-        if($transparancyCode === "" || ((double) $transparancyCode < 0 || (double) $transparancyCode > 1)) {
+        if ($transparancyCode === '' || ((float) $transparancyCode < 0 || (float) $transparancyCode > 1)) {
             $passed = false;
         }
 
