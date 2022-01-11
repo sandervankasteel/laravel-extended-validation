@@ -30,7 +30,7 @@ class RGBA implements Rule
         }
 
         // split
-        $colourCodes = $rgb->matchAll('/(-?[0-9]+)/');
+        $colourCodes = $rgb->matchAll('/(\d(?!\.)\d(-?[0-9]+))/');
         if ($colourCodes->count() !== 3) {
             return false;
         }
@@ -43,6 +43,12 @@ class RGBA implements Rule
                 return false;
             }
         });
+
+        $transparancyCode = (string) $rgb->match('(\d\.\d)');
+        // Check if transparancy is present OR (the transparancy amount is below 0 OR above 1)
+        if($transparancyCode === "" || ((double) $transparancyCode < 0 || (double) $transparancyCode > 1)) {
+            $passed = false;
+        }
 
         return $passed;
     }
