@@ -16,7 +16,7 @@ class RGBA implements Rule
             ->replace(' ', '')
             ->lower();
 
-        if (! $rgb->length() >= 11 && ! $rgb->length() <= 17) {
+        if (! $rgb->length() >= 11 && ! $rgb->length() < 17) {
             return false;
         }
 
@@ -32,6 +32,7 @@ class RGBA implements Rule
         // split
         $colourCodes = $rgb->matchAll('/(\d(?!\.)\d(-?[0-9]+))/');
         if ($colourCodes->count() !== 3) {
+            dd($rgb);
             return false;
         }
 

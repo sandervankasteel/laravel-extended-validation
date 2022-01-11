@@ -9,7 +9,8 @@ test('that we can successfully validate RGB codes', function ($rgbCode, $expecte
         $sut->passes('some-attribute', $rgbCode)
     )->toBe($expectedResult);
 })->with([
-    ['rgba(255,255,255, 0.1)', true],
+    ['rgba(255,255,255,0.1)', true],
+//    ['rgba(1,1,1,0.1)', true],
     ['rgba( 255, 255, 255, 0.1)', true],
     ['RGBa(255,255,255, 0.1)', true],
     ['RgBa(255,255,255, 0.1)', true],
@@ -22,6 +23,8 @@ test('that we can successfully validate RGB codes', function ($rgbCode, $expecte
     ['rgba(255,255)', false],
     ['rgba(255,255', false],
     ['rgba255,255,255,0.2', false],
+    ['abca(2,2)', false],
+    ['abca(255,255,255,0.2)', false]
 ]);
 
 test('that the error message contains the attribute', function () {
