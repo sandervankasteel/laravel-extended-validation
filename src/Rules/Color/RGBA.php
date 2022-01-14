@@ -16,7 +16,7 @@ class RGBA implements Rule
             ->replace(' ', '')
             ->lower();
 
-        if ($rgb->length() <= 11 || ! $rgb->length() > 17) {
+        if ($rgb->length() <= 11 || $rgb->length() > 17) {
             return false;
         }
 
@@ -56,7 +56,7 @@ class RGBA implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain a valid RGBA color';
     }
