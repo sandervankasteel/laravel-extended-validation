@@ -63,22 +63,22 @@ nav:
       - dateandtime/TimeZoneAbbr.md
       - dateandtime/UnixTime.md
   - 'Locales':
-      - 'BE':
+      - 'Belgium (BE)':
           - locale/BE/Address/PostalCode.md
           - locale/BE/Company/VatNumber.md
-      - 'DE':
+      - 'Germany (DE)':
           - locale/DE/Company/VatNumber.md
           - locale/DE/Address/PostalCode.md
-      - 'FR':
+      - 'France (FR)':
           - locale/FR/Company/VatNumber.md
           - locale/FR/Address/PostalCode.md
-      - 'LU':
+      - 'Luxemburg (LU)':
           - locale/LU/Company/VatNumber.md
-      - 'NL':
+      - 'Netherlands, The (NL)':
           - locale/NL/Address/PostalCode.md
           - locale/NL/Person/SocialSecurityNumber.md
           - locale/NL/Company/VatNumber.md
-      - 'UK':
+      - 'United Kingdom (UK)':
           - locale/UK/Address/PostalCode.md
   - 'Network':
       - network/IPv4.md
