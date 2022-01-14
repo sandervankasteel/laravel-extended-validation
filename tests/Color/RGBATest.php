@@ -15,6 +15,7 @@ test('that we can successfully validate RGB codes', function ($rgbCode, $expecte
     ['rgba( 255, 255, 255, 0.1)', true],
     ['RGBa(255,255,255, 0.1)', true],
     ['RgBa(255,255,255, 0.1)', true],
+    ['rgba(255,255,255, 1.1)', false],
     ['rgba(255,255,255)', false],
     ['rgb(255,255,255)', false],
     ['abca(255,255,255, 0.2)', false],

@@ -15,7 +15,7 @@ class RGB implements \Illuminate\Contracts\Validation\Rule
             ->replace(' ', '')
             ->lower();
 
-        if (! $rgb->length() >= 10 && ! $rgb->length() < 16) {
+        if ($rgb->length() <= 10 || $rgb->length() > 16) {
             return false;
         }
 

@@ -23,6 +23,7 @@ test('that we can successfully validate RGB codes', function ($rgbCode, $expecte
     ['rgb255,255,255', false],
     ['abc(2,2)', false],
     ['abc(255,255,255,2)', false],
+    ['rgb(255,255,255,255)', false],
 ]);
 
 test('that the error message contains the attribute', function () {
