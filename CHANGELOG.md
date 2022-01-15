@@ -11,7 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - RGBA validation rule
 - Luxembourg postal code rule
 - Spanish postal code rule
-- Italian postal code
+- Italian postal code rule
+- Irish postal code rule
 
 ### Changed
 
