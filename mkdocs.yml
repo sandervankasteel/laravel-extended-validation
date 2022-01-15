@@ -1,9 +1,12 @@
 site_name: Laraval Extended Validation
 site_description: Documentation for Laraval Extended Validation
+site_author: Sander van Kasteel
 
 repo_name: sandervankasteel/laravel-extended-validation
 repo_url: https://github.com/sandervankasteel/laravel-extended-validation
 edit_uri: https://github.com/sandervankasteel/laravel-extended-validation/edit/main/docs/
+
+strict: true
 
 theme:
   name: material
@@ -14,8 +17,6 @@ theme:
     scheme: preference
     primary: blue
     accent: blue
-#  favicon: images/favicon.ico
-#  logo: images/logo.svg
   icon:
     repo: fontawesome/brands/github
   language: en
@@ -79,6 +80,8 @@ nav:
           - locale/NL/Address/PostalCode.md
           - locale/NL/Person/SocialSecurityNumber.md
           - locale/NL/Company/VatNumber.md
+      - 'Spain (ES)':
+          - locale/ES/Address/PostalCode.md
       - 'United Kingdom (UK)':
           - locale/UK/Address/PostalCode.md
   - 'Network':
