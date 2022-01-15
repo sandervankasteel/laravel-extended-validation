@@ -22,16 +22,7 @@ class PostalCode implements Rule
      * @var string[]
      */
     private $prefixes = [
-        '000',
-        '001',
-        '002',
-        '003',
-        '004',
-        '005',
-        '006',
-        '007',
-        '008',
-        '009',
+        '00',
         '01',
         '02',
         '03',
@@ -136,18 +127,10 @@ class PostalCode implements Rule
      * @param bool $allowVatican
      * @param bool $allowSanMarino
      */
-    public function __construct($allowVatican = false, $allowSanMarino = false)
+    public function __construct(bool $allowVatican = false, bool $allowSanMarino = false)
     {
         $this->allowVatican = $allowVatican;
         $this->allowSanMarino = $allowSanMarino;
-
-        if ($allowVatican) {
-            $this->prefixes[] = '00120';
-        }
-
-        if ($allowSanMarino) {
-            $this->prefixes[] = '4789';
-        }
     }
 
     /**
