@@ -73,6 +73,8 @@ nav:
       - 'France (FR)':
           - locale/FR/Company/VatNumber.md
           - locale/FR/Address/PostalCode.md
+      - 'Italy (IT)':
+          - locale/IT/Address/PostalCode.md
       - 'Luxemburg (LU)':
           - locale/LU/Company/VatNumber.md
           - locale/LU/Address/PostalCode.md

@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - RGB validation rule
 - RGBA validation rule
 - Luxembourg postal code rule
+- Spanish postal code rule
+- Italian postal code
 
 ### Changed
 
