@@ -2,13 +2,12 @@
 
 use LaravelExtendedValidation\Rules\Locale\ES\Address\PostalCode;
 
-test('that we can successfully validate a Spanish postal code', function($postalCode, $expectedResult) {
+test('that we can successfully validate a Spanish postal code', function ($postalCode, $expectedResult) {
     $sut = new PostalCode();
 
     expect(
         $sut->passes('some-attribute', $postalCode)
     )->toBe($expectedResult);
-
 })->with([
     ['01123', true],
     ['02123', true],
@@ -64,7 +63,7 @@ test('that we can successfully validate a Spanish postal code', function($postal
     ['12345', true],
     ['38000', true],
     ['69420', false],
-    ['123AB45', false]
+    ['123AB45', false],
 ]);
 
 test('that the attribute is returned in the error message', function () {
@@ -74,47 +73,3 @@ test('that the attribute is returned in the error message', function () {
         $sut->message()
     )->toContain(':attribute');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
