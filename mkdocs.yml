@@ -74,6 +74,7 @@ nav:
           - locale/FR/Address/PostalCode.md
       - 'Luxemburg (LU)':
           - locale/LU/Company/VatNumber.md
+          - locale/LU/Address/PostalCode.md
       - 'Netherlands, The (NL)':
           - locale/NL/Address/PostalCode.md
           - locale/NL/Person/SocialSecurityNumber.md
