@@ -86,6 +86,8 @@ nav:
           - locale/NL/Company/VatNumber.md
       - 'Spain (ES)':
           - locale/ES/Address/PostalCode.md
+      - 'South Korea (KR)':
+          - locale/SK/Address/PostalCode.md
       - 'United Kingdom (UK)':
           - locale/UK/Address/PostalCode.md
   - 'Network':

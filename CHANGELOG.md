@@ -7,12 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - RGB validation rule
 - RGBA validation rule
 - Luxembourg postal code rule
 - Spanish postal code rule
 - Italian postal code rule
 - Irish postal code rule
+- South Korean (ROK) postal code rule
 
 ### Changed
 
