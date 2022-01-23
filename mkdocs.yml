@@ -84,6 +84,8 @@ nav:
           - locale/NL/Address/PostalCode.md
           - locale/NL/Person/SocialSecurityNumber.md
           - locale/NL/Company/VatNumber.md
+      - 'Portugal (PT)':
+          - locale/PT/Address/PostalCode.md
       - 'Spain (ES)':
           - locale/ES/Address/PostalCode.md
       - 'South Korea (KR)':
