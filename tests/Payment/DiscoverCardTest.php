@@ -14,6 +14,9 @@ test('that we can successfully validate a Discover Card', function ($creditCardN
     ['6011 6011 6011 6611', true],
     ['6445 6445 6445 6445', true],
     ['36000000000000', false],
+    ['29000000000000', false],
+    ['3600000000000', false],
+    ['36000000000000000000', false],
 ]);
 
 test('that the attribute is being returned in the error message', function () {
