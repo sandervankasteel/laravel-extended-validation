@@ -96,6 +96,7 @@ nav:
       - network/MacAddress.md
   - 'Payment':
       - payment/AmericanExpress.md
+      - payment/DiscoverCard.md
       - payment/IBAN.md
       - payment/MasterCard.md
       - payment/Visa.md
