@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Italian postal code rule
 - Irish postal code rule
 - South Korean (ROK) postal code rule
+- Discover card validation rule
+- Portuguese postal code rule
 
 ### Changed
 
