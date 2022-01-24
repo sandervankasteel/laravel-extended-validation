@@ -1,18 +1,19 @@
 <?php
 
-use LaravelExtendedValidation\Rules\Locale\NL\Company\VatNumber;
+use LaravelExtendedValidation\Rules\Locale\ES\Company\VatNumber;
 
-test('that we can successfully validate NL VAT numbers', function ($vatNumber, $expectedOutput) {
+test('that we can successfully validate Spanish company VAT numbers', function ($vatNumber, $expectedOutput) {
     $sut = new VatNumber();
 
     expect(
         $sut->passes('some-attribute', $vatNumber)
     )->toBe($expectedOutput);
 })->with([
-    ['NL123456782B01', true],
-    ['NL123456782B1', false],
-    ['BE123456782B01', false],
-    ['NL123456782', false],
+    ['ESB86261823', true],
+    ['esb86261823', true],
+    ['ESB862618233', false],
+    ['ESB8626182', false],
+    ['NLB86261823', false],
 ]);
 
 test('that we get the attribute back from the error message', function () {
