@@ -94,6 +94,7 @@ nav:
       - 'United Kingdom (UK)':
           - locale/UK/Address/PostalCode.md
   - 'Network':
+      - network/Domain.md
       - network/IPv4.md
       - network/IPv6.md
       - network/MacAddress.md
