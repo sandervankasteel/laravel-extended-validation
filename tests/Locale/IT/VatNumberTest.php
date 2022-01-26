@@ -2,14 +2,12 @@
 
 use LaravelExtendedValidation\Rules\Locale\IT\Company\VatNumber;
 
-test('that we can successfully validate Italian VAT numbers', function($vatNumber, $expectedOutput) {
-
+test('that we can successfully validate Italian VAT numbers', function ($vatNumber, $expectedOutput) {
     $sut = new VatNumber();
 
     expect(
         $sut->passes('some-attribute', $vatNumber)
     )->toBe($expectedOutput);
-
 })->with([
     ['IT00632810164', true],
     ['IT0063281016', false],

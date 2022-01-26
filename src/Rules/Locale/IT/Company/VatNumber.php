@@ -7,7 +7,6 @@ use Illuminate\Support\Str;
 
 class VatNumber implements Rule
 {
-
     /**
      * @inheritDoc
      */
@@ -16,15 +15,15 @@ class VatNumber implements Rule
         $vatNumber = Str::of($value)
             ->upper();
 
-        if($vatNumber->length() !== 13) {
+        if ($vatNumber->length() !== 13) {
             return false;
         }
 
-        if(!$vatNumber->startsWith('IT')) {
+        if (! $vatNumber->startsWith('IT')) {
             return false;
         }
 
-        return (string) $vatNumber->match('/\d{11}/') !== "";
+        return (string) $vatNumber->match('/\d{11}/') !== '';
     }
 
     /**
@@ -32,6 +31,6 @@ class VatNumber implements Rule
      */
     public function message(): string
     {
-        return ":attribute does not contain a valid Italian VAT number";
+        return ':attribute does not contain a valid Italian VAT number';
     }
 }
