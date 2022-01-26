@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.4.0] - 26-01-2022
+
+### Added
+
+- RGB validation rule
+- RGBA validation rule
+- Luxembourg postal code rule
+- Spanish postal code rule
+- Italian postal code rule
+- Irish postal code rule
+- South Korean (ROK) postal code rule
+- Discover card validation rule
+- Portuguese postal code rule
+- Spanish VAT number
+- Domain name rule
+- Italian VAT number
+
 ## [0.3.0] - 09-01-2022
 
 ### Added

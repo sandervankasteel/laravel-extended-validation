@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+### Changed
+
+### Removed
+
+## [0.4.0] - 26-01-2022
+
+### Added
+
 - RGB validation rule
 - RGBA validation rule
 - Luxembourg postal code rule
@@ -20,11 +28,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Spanish VAT number
 - Domain name rule
 - Italian VAT number
-
-### Changed
-
-### Removed
-
 
 ## [0.3.0] - 09-01-2022
 
