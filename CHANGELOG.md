@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Portuguese postal code rule
 - Spanish VAT number
 - Domain name rule
+- Italian VAT number
 
 ### Changed
 

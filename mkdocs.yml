@@ -77,6 +77,7 @@ nav:
           - locale/IE/Address/PostalCode.md
       - 'Italy (IT)':
           - locale/IT/Address/PostalCode.md
+          - locale/IT/Company/VatNumber.md
       - 'Luxemburg (LU)':
           - locale/LU/Company/VatNumber.md
           - locale/LU/Address/PostalCode.md
