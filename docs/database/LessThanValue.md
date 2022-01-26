@@ -1,5 +1,5 @@
 # LessThanValue
-## `LaravelExtendedValidation\Rules\Database\LessThanValue;`
+### `LaravelExtendedValidation\Rules\Database\LessThanValue`
 
 A validation rule that checks if the POSTed value is less than a value found in a database row.
 

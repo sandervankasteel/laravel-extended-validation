@@ -7,7 +7,7 @@ Valid examples are:
 
 - EC1A 1BB
 - W1T 1FB
-- ASCN 1ZZ (if, `$allowSpecialCases` is set to `true`)
+- ASCN 1ZZ (if, `$allowSpecialCases` is set to `true`, since this is a British Overseas Territory)
 
 ## Constructor argument(s)
 

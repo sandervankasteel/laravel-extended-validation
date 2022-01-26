@@ -1,5 +1,5 @@
 # MustBeEqualValue
-## `LaravelExtendedValidation\Rules\Database\MustBeEqualValue;`
+### `LaravelExtendedValidation\Rules\Database\MustBeEqualValue`
 
 A validation rule that checks if the POSTed value is equal to a value found in a database row.
 

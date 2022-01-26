@@ -1,5 +1,5 @@
 # MoreThanValue
-## `LaravelExtendedValidation\Rules\Database\MoreThanValue;`
+### `LaravelExtendedValidation\Rules\Database\MoreThanValue`
 
 A validation rule that checks if the POSTed value is more than a value found in a database row.
 

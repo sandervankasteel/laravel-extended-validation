@@ -35,6 +35,7 @@ plugins:
 
 nav:
   - index.md
+  - changelog.md
   - 'General':
       - general/OrRule.md
   - 'Barcode':
