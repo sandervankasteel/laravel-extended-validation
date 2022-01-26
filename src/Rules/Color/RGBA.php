@@ -10,7 +10,7 @@ class RGBA implements Rule
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
         $rgb = Str::of($value)
             ->replace(' ', '')
@@ -35,18 +35,17 @@ class RGBA implements Rule
             return false;
         }
 
-        $passed = true;
-        $colourCodes->each(function ($rgbCode) use (&$passed) {
-            if ((int) $rgbCode <= 0 || (int) $rgbCode >= 256) {
-                $passed = false;
+        $passed = $colourCodes->filter(function ($item) {
+            return (int) $item >= 0 && (int) $item <= 255;
+        })->count() === 3;
 
-                return false;
-            }
-        });
+        if (! $passed) {
+            return false;
+        }
 
-        $transparancyCode = (string) $rgb->match('/(\d\.\d)/');
-        // Check if transparancy is present OR (the transparancy amount is below 0 OR above 1)
-        if ($transparancyCode === '' || ((float) $transparancyCode < 0 || (float) $transparancyCode > 1)) {
+        $transparencyCode = (string) $rgb->match('/(\d\.\d)/');
+        // Check if transparency is present OR (the transparency amount is below 0 OR above 1)
+        if ($transparencyCode === '' || ((float) $transparencyCode < 0 || (float) $transparencyCode > 1)) {
             $passed = false;
         }
 
