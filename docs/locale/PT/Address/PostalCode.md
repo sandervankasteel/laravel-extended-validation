@@ -3,8 +3,8 @@
 
 Determines if the supplied postal code is a Portuguese postal code.
 
-- `2050`
-- `8200`
+- 2050
+- 8200
 
 ## Constructor argument(s)
 
