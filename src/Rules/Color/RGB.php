@@ -2,9 +2,10 @@
 
 namespace LaravelExtendedValidation\Rules\Color;
 
+use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Str;
 
-class RGB implements \Illuminate\Contracts\Validation\Rule
+class RGB implements Rule
 {
     /**
      * @inheritDoc
@@ -34,16 +35,9 @@ class RGB implements \Illuminate\Contracts\Validation\Rule
             return false;
         }
 
-        $passed = true;
-        $colourCodes->each(function ($rgbCode) use (&$passed) {
-            if ((int) $rgbCode <= 0 || (int) $rgbCode >= 256) {
-                $passed = false;
-
-                return false;
-            }
-        });
-
-        return $passed;
+        return $colourCodes->filter(function ($item) {
+            return (int) $item >= 0 && (int) $item <= 255;
+        })->count() === 3;
     }
 
     /**
