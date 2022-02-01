@@ -79,6 +79,8 @@ nav:
       - 'Italy (IT)':
           - locale/IT/Address/PostalCode.md
           - locale/IT/Company/VatNumber.md
+      - 'Japan (JP)':
+          - locale/JP/Address/PostalCode.md
       - 'Luxemburg (LU)':
           - locale/LU/Company/VatNumber.md
           - locale/LU/Address/PostalCode.md
