@@ -7,8 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Added Japanese Postalcode
 
 ### Changed
+- Refactored RBG and RGBA rules
 
 ### Removed
 
