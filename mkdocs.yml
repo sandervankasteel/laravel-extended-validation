@@ -90,6 +90,8 @@ nav:
           - locale/NL/Company/VatNumber.md
       - 'Portugal (PT)':
           - locale/PT/Address/PostalCode.md
+      - 'Russia (RU)':
+          - locale/RU/Address/PostalCode.md
       - 'Spain (ES)':
           - locale/ES/Address/PostalCode.md
           - locale/ES/Company/VatNumber.md
