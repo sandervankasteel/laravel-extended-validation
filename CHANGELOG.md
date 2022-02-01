@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Added Japanese Postalcode
+- Added Japanese Postal code rule
+- Added Russian Postal code rule
 
 ### Changed
 - Refactored RBG and RGBA rules

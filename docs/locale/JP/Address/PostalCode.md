@@ -1,7 +1,7 @@
 # Postalcode
 ### `LaravelExtendedValidation\Rules\Locale\JP\Address\PostalCode`
 
-Determines if the supplied postal code is a valid Italian postal code.
+Determines if the supplied postal code is a valid Japanese postal code.
 
 Valid examples:
 
