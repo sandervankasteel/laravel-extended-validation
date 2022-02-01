@@ -68,6 +68,8 @@ nav:
       - 'Belgium (BE)':
           - locale/BE/Address/PostalCode.md
           - locale/BE/Company/VatNumber.md
+      - 'Denmark (DK)':
+          - locale/DK/Address/PostalCode.md
       - 'Germany (DE)':
           - locale/DE/Company/VatNumber.md
           - locale/DE/Address/PostalCode.md
