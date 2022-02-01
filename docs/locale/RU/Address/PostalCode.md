@@ -1,4 +1,4 @@
-# Postalcode
+# Postal code
 ### `LaravelExtendedValidation\Rules\Locale\RU\Address\PostalCode`
 
 Determines if the supplied postal code is a valid Russian postal code.
