@@ -73,6 +73,8 @@ nav:
       - 'Germany (DE)':
           - locale/DE/Company/VatNumber.md
           - locale/DE/Address/PostalCode.md
+      - 'Greece (GR)':
+          - locale/GR/Address/PostalCode.md
       - 'France (FR)':
           - locale/FR/Company/VatNumber.md
           - locale/FR/Address/PostalCode.md
