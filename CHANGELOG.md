@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Japanese Postal code rule
 - Added Russian Postal code rule
 - Added Swedish Postal code rule
+- Added Danish Postal code rule
 
 ### Changed
 - Refactored RBG and RGBA rules
