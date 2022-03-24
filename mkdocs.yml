@@ -103,6 +103,7 @@ nav:
           - locale/SK/Address/PostalCode.md
       - 'Sweden (SE)':
           - locale/SE/Address/PostalCode.md
+          - locale/SE/Company/VatNumber.md
       - 'United Kingdom (UK)':
           - locale/UK/Address/PostalCode.md
   - 'Network':
