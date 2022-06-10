@@ -75,6 +75,8 @@ nav:
       - dateandtime/TimeZoneAbbr.md
       - dateandtime/UnixTime.md
   - 'Locales':
+      - 'Australia (AU)':
+          - locale/AU/Payment/BSBNumber.md
       - 'Belgium (BE)':
           - locale/BE/Address/PostalCode.md
           - locale/BE/Company/VatNumber.md
@@ -85,6 +87,7 @@ nav:
           - locale/DE/Address/PostalCode.md
       - 'Greece (GR)':
           - locale/GR/Address/PostalCode.md
+          - locale/GR/Company/VatNumber.md
       - 'France (FR)':
           - locale/FR/Company/VatNumber.md
           - locale/FR/Address/PostalCode.md

@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Swedish Postal code rule
 - Added Danish Postal code rule
 - Added Greek Postal code rule
+- Added BSB number rule
 
 ### Changed
 - Refactored RBG and RGBA rules
