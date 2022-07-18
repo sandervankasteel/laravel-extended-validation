@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Danish Postal code rule
 - Added Greek Postal code rule
 - Added BSB number rule
+- Added docker-compose for development
 
 ### Changed
 - Refactored RBG and RGBA rules
