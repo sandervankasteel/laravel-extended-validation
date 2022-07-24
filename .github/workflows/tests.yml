@@ -37,7 +37,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
+          composer require "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update --dev
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
 
       - name: Execute tests
