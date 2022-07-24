@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
+### Changed
+
+### Removed
+
+
+## [0.5.0] - 24-07-2022
+
+### Added
 - Added Japanese Postal code rule
 - Added Russian Postal code rule
 - Added Swedish Postal code rule
@@ -16,10 +25,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added docker-compose for development
 - Added Laravel 9.x support
 - Added support for PHP 8.1
-- Renamed "UK" namespace to "GB"
 
 ### Changed
 - Refactored RBG and RGBA rules
+- Renamed "UK" namespace to "GB"
 
 ### Removed
 

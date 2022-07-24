@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.5.0] - 24-07-2022
+
+### Added
+- Added Japanese Postal code rule
+- Added Russian Postal code rule
+- Added Swedish Postal code rule
+- Added Danish Postal code rule
+- Added Greek Postal code rule
+- Added BSB number rule
+- Added docker-compose for development
+- Added Laravel 9.x support
+- Added support for PHP 8.1
+
+### Changed
+- Refactored RBG and RGBA rules
+- Renamed "UK" namespace to "GB"
+
 ## [0.4.0] - 26-01-2022
 
 ### Added
