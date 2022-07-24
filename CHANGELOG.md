@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added docker-compose for development
 - Added Laravel 9.x support
 - Added support for PHP 8.1
+- Renamed "UK" namespace to "GB"
 
 ### Changed
 - Refactored RBG and RGBA rules
