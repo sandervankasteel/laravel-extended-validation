@@ -14,11 +14,14 @@ jobs:
         include:
           - { "php": "7.3", "laravel": "7.*", "testbench": "5.*", "dependency-version": "prefer-stable"}
           - { "php": "7.3", "laravel": "8.*", "testbench": "6.*", "dependency-version": "prefer-stable"}
+
           - { "php": "7.4", "laravel": "7.*", "testbench": "5.*", "dependency-version": "prefer-stable"}
           - { "php": "7.4", "laravel": "8.*", "testbench": "6.*", "dependency-version": "prefer-stable"}
+
           - { "php": "8.0", "laravel": "7.*", "testbench": "5.*", "dependency-version": "prefer-stable"}
           - { "php": "8.0", "laravel": "8.*", "testbench": "6.*", "dependency-version": "prefer-stable"}
           - { "php": "8.0", "laravel": "9.*", "testbench": "7.*", "dependency-version": "prefer-stable"}
+
           - { "php": "8.1", "laravel": "8.*", "testbench": "6.*", "dependency-version": "prefer-stable"}
           - { "php": "8.1", "laravel": "9.*", "testbench": "7.*", "dependency-version": "prefer-stable"}
 
