@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelExtendedValidation\Rules\Locale\UK\Address;
+namespace LaravelExtendedValidation\Rules\Locale\GB\Address;
 
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Str;
@@ -37,9 +37,9 @@ class PostalCode implements Rule
     public function message(): string
     {
         if ($this->allowSpecialCases) {
-            return ':attribute must contain a valid UK (or British Overseas Territories) postal code';
+            return ':attribute must contain a valid GB (or British Overseas Territories) postal code';
         }
 
-        return ':attribute must contain a valid UK postal code. Not including British Overseas Territories.';
+        return ':attribute must contain a valid GB postal code. Not including British Overseas Territories.';
     }
 }
