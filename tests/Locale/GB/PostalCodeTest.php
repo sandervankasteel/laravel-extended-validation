@@ -1,6 +1,6 @@
 <?php
 
-use LaravelExtendedValidation\Rules\Locale\UK\Address\PostalCode;
+use LaravelExtendedValidation\Rules\Locale\GB\Address\PostalCode;
 
 test('that we can successfully validate a postal code', function ($postalCode, $expectedOutput) {
     $sut = new PostalCode();

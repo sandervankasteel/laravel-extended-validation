@@ -82,6 +82,8 @@ nav:
           - locale/BE/Company/VatNumber.md
       - 'Denmark (DK)':
           - locale/DK/Address/PostalCode.md
+      - 'Great Britain (GB)':
+          - locale/GB/Address/PostalCode.md
       - 'Germany (DE)':
           - locale/DE/Company/VatNumber.md
           - locale/DE/Address/PostalCode.md
@@ -117,8 +119,6 @@ nav:
       - 'Sweden (SE)':
           - locale/SE/Address/PostalCode.md
           - locale/SE/Company/VatNumber.md
-      - 'United Kingdom (UK)':
-          - locale/UK/Address/PostalCode.md
   - 'Network':
       - network/Domain.md
       - network/IPv4.md
