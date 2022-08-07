@@ -14,7 +14,7 @@ class Domain implements Rule
     {
         $domain = Str::of($value);
 
-        return $domain->match('/^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\\.)+[A-Za-z]{2,6}$/')->length() !== 0;
+        return $domain->match('/^((?!-)[A-Za-z0-9-]{1,63}(?<!-)\\.)+[A-Za-z]{2,}$/')->length() !== 0;
     }
 
     /**

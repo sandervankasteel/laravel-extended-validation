@@ -15,6 +15,7 @@ test('that we can successfully validate domains', function ($domain, $expectedOu
     ['something.co.uk', true],
     ['xn--c6h.com', true], // ♡.com
     ['g.co', true],
+    ['foo.accountants', true],
     ['notld', false],
     ['test.t.t.c', false],
     ['-domain.tld', false],
