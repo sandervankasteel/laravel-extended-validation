@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelExtendedValidation\Rules\Locale\BE\Company;
+namespace LaravelExtendedValidation\Rules\Locale\GB\Company;
 
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Str;
@@ -14,19 +14,21 @@ class VatNumber implements Rule
     {
         /** @var string $numbers */
         $numbers = Str::of($value)
-            ->replace('.', '')
+            ->replace(' ', '')
             ->upper()
-            ->split('/BE/')
+            ->split('/GB/')
             ->filter()
             ->first();
 
-        if (! Str::of($value)->upper()->startsWith('BE') || Str::of($numbers)->length() !== 10) {
+        if (! Str::of($value)->upper()->startsWith('GB')) {
             return false;
         }
 
-        return abs(
-            bcmod(Str::of($numbers)->limit(8, ''), '97') - 97
-        ) == substr($numbers, -2);
+        if (Str::of($numbers)->length() !== 9 && Str::of($numbers)->length() !== 12) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
@@ -34,6 +36,6 @@ class VatNumber implements Rule
      */
     public function message(): string
     {
-        return ':attribute does not contain a valid Belgium VAT number';
+        return ':attribute does not contain a valid British VAT number';
     }
 }

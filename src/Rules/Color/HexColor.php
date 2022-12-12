@@ -20,7 +20,7 @@ class HexColor implements Rule
 
         $colours = str_split(
             ($startsWithHashSign) ? $colourCodes[1] : $value,
-        2);
+            2);
 
         $validColourRange = false;
 

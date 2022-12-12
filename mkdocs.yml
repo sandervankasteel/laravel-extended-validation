@@ -83,6 +83,7 @@ nav:
       - 'Denmark (DK)':
           - locale/DK/Address/PostalCode.md
       - 'Great Britain (GB)':
+          - locale/GB/Company/VatNumber.md
           - locale/GB/Address/PostalCode.md
       - 'Germany (DE)':
           - locale/DE/Company/VatNumber.md

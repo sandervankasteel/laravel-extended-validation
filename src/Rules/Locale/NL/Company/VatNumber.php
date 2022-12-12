@@ -35,7 +35,7 @@ class VatNumber implements Rule
                 ->filter()
                 ->values()
                 ->first()
-        ));
+            ));
 
         $total = 0;
         $numbers->each(static function ($item, $index) use (&$total) {
