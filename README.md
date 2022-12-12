@@ -17,6 +17,17 @@ Laravel Extended Validation requires PHP >= 7.3 and works with Laravel >= 7.0 (a
 composer require sandervankasteel/laravel-extended-validation
 ```
 
+## Validated versions
+
+Laravel Extended Validation has been tested against the following PHP and Laravel version combinations
+
+|             | PHP 7.3 | PHP 7.4 | PHP 8.0 | PHP 8.1 | PHP 8.1 |
+|-------------|---------|---------|---------|---------|---------|
+| Laravel 7.0 | ✅       | ✅       | ✅       | ❌       | ❌       |
+| Laravel 8.0 | ✅       | ✅       | ✅       | ✅       | ✅       |
+| Laravel 9.0 | ❌       | ❌       | ✅       | ✅       | ✅       |
+
+
 
 ## Usage
 
