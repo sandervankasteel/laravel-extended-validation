@@ -18,7 +18,6 @@ use Orchestra\Testbench\TestCase;
 
 uses(TestCase::class)
     ->beforeEach(function () {
-
         /** @var $app Application */
         $app = $this->app;
 

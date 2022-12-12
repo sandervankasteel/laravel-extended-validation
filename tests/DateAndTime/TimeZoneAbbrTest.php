@@ -145,6 +145,6 @@ test('that we can also also validate timezones which are not in the $acceptedTim
     $sut->acceptedTimezones = [];
 
     expect(
-       $sut->passes('some-attribute', 'cest')
-   )->toBe(true);
+        $sut->passes('some-attribute', 'cest')
+    )->toBe(true);
 });

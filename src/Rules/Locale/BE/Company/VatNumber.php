@@ -26,7 +26,7 @@ class VatNumber implements Rule
 
         return abs(
             bcmod(Str::of($numbers)->limit(8, ''), '97') - 97
-            ) == substr($numbers, -2);
+        ) == substr($numbers, -2);
     }
 
     /**

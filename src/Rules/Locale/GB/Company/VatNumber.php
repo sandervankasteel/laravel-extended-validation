@@ -20,11 +20,11 @@ class VatNumber implements Rule
             ->filter()
             ->first();
 
-        if (!Str::of($value)->upper()->startsWith('GB')) {
+        if (! Str::of($value)->upper()->startsWith('GB')) {
             return false;
         }
 
-        if(Str::of($numbers)->length() !== 9 && Str::of($numbers)->length() !== 12) {
+        if (Str::of($numbers)->length() !== 9 && Str::of($numbers)->length() !== 12) {
             return false;
         }
 

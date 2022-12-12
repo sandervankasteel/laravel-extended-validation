@@ -21,6 +21,6 @@ test('that we can successfully validate an ISBN-10 number', function ($isbn, $ex
 test('that the attribute is being returned in the error message', function () {
     $sut = new ISBN10();
     expect(
-       $sut->message()
-   )->toContain(':attribute');
+        $sut->message()
+    )->toContain(':attribute');
 });

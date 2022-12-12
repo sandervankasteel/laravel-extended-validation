@@ -48,6 +48,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "codestyle-fix": "./vendor/bin/php-cs-fixer fix"
+        "codestyle-fix": "./vendor/bin/php-cs-fixer --config=.php-cs-fixer.php fix"
     }
 }
