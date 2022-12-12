@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.0] - 12-12-2022
+
+### Added
+- Added British VAT rule
+- Added testing with PHP 8.2
+
+### Fixed
+- Issue that the TLD of a domain couldn't be longer then 6 characters [#125](https://github.com/sandervankasteel/laravel-extended-validation/issues/125)
+
+
 ## [0.5.0] - 24-07-2022
 
 ### Added
