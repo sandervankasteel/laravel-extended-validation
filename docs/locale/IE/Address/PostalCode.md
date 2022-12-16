@@ -1,9 +1,11 @@
-# Postalcode
-### `LaravelExtendedValidation\Rules\Locale\IE\Address\PostalCode`
-
+# Postal code
 Determines if the supplied postal code ('Eircode') is a valid Irish postal code.
 
-## Constructor argument(s)
+### Class
+`LaravelExtendedValidation\Rules\Locale\IE\Address\PostalCode`
+
+### Constructor argument(s)
 
 ```php
+none
 ```

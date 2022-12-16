@@ -1,14 +1,15 @@
-# Postalcode
-### `LaravelExtendedValidation\Rules\Locale\JP\Address\PostalCode`
-
+# Postal code
 Determines if the supplied postal code is a valid Japanese postal code.
 
-Valid examples:
+Valid examples are:
 
 - 183-0016
 - 259-0147
 
-## Constructor argument(s)
+### Class
+`LaravelExtendedValidation\Rules\Locale\JP\Address\PostalCode`
+
+### Constructor argument(s)
 
 ```php
 none

@@ -1,9 +1,10 @@
-# Postalcode
-### `LaravelExtendedValidation\Rules\Locale\ES\Address\PostalCode`
-
+# Postal code
 Determines if the supplied postal code is a valid Spanish postal code.
 
-## Constructor argument(s)
+### Class  
+`LaravelExtendedValidation\Rules\Locale\ES\Address\PostalCode`
+
+### Constructor argument(s)
 
 ```php
 none

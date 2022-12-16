@@ -1,6 +1,4 @@
 # Postal code
-### `LaravelExtendedValidation\Rules\Locale\SE\Address\PostalCode`
-
 Determines if the supplied postal code is a valid Swedish postal code.
 
 Valid examples:
@@ -8,7 +6,10 @@ Valid examples:
 - 343 81
 - 412 81
 
-## Constructor argument(s)
+### Class
+`LaravelExtendedValidation\Rules\Locale\SE\Address\PostalCode`
+
+### Constructor argument(s)
 
 ```php
 none
