@@ -1,11 +1,12 @@
 # MoreThanValueOrEqualValue
-### `LaravelExtendedValidation\Rules\Database\MoreThanValueOrEqualValue`
-
 A validation rule that checks if the POSTed value is more or equal to a value found in a database row.
 
 Please note, this validation fails when it can not find a record to compare against.
 
-## Constructor argument(s)
+### Class
+`LaravelExtendedValidation\Rules\Database\MoreThanValueOrEqualValue`
+
+### Constructor argument(s)
 
 ```php
 $table = '' // Table name to search in

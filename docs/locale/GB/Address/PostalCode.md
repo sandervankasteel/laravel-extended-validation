@@ -1,5 +1,4 @@
-# Postalcode
-### `LaravelExtendedValidation\Rules\Locale\UK\Address\PostalCode`
+# Postal code
 
 Determines if the supplied postalcode (postcode) is conforming to the UK standard of postalcodes.
 
@@ -8,13 +7,6 @@ Valid examples are:
 - EC1A 1BB
 - W1T 1FB
 - ASCN 1ZZ (if, `$allowSpecialCases` is set to `true`, since this is a British Overseas Territory)
-
-## Constructor argument(s)
-
-```php
-// Verifies if British Overseas Territories are also allowed
-$allowSpecialCases: false
-```
 
 | List of allowed British Overseas Territories |
 |----------------------------------------------|
@@ -28,3 +20,13 @@ $allowSpecialCases: false
 | Saint Helena                                 |
 | Tristan da Cunha                             |
 | Turks and Caicos Islands                     |
+
+### Class
+`LaravelExtendedValidation\Rules\Locale\UK\Address\PostalCode`
+
+### Constructor argument(s)
+
+```php
+// Verifies if British Overseas Territories are also allowed
+$allowSpecialCases: false
+```

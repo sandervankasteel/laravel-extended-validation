@@ -78,6 +78,7 @@
 
 ## [0.1.1] - 13-12-2021
 
+### Fixed
 - Fixed issue with loading Service Provider
 
 ## [0.1.0] - 11-12-2021 (First Release 🥳)

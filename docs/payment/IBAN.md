@@ -1,9 +1,10 @@
 # IBAN
-### `LaravelExtendedValidation\Rules\Payment\IBAN`
-
 This validation rules checks if the posted input is a valid IBAN bank account number.
 
-## Constructor argument(s)
+### Class
+`LaravelExtendedValidation\Rules\Payment\IBAN`
+
+### Constructor argument(s)
 
 ```php
 none

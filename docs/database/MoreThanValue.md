@@ -1,11 +1,12 @@
 # MoreThanValue
-### `LaravelExtendedValidation\Rules\Database\MoreThanValue`
-
 A validation rule that checks if the POSTed value is more than a value found in a database row.
 
 Please note, this validation fails when it can not find a record to compare against.
 
-## Constructor argument(s)
+### Class
+`LaravelExtendedValidation\Rules\Database\MoreThanValue`
+
+### Constructor argument(s)
 
 ```php
 $table = '' // Table name to search in
