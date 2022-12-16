@@ -22,6 +22,7 @@ theme:
   language: en
   features:
     - navigation.instant
+    - search.share
 
 extra:
   consent:
