@@ -1,5 +1,7 @@
 <?php
 
+use LaravelExtendedValidation\Rules\Format\XML;
+
 test('that we can successfully validate XML', function ($value, $expectedResult) {
     $sut = new XML();
 
@@ -9,6 +11,7 @@ test('that we can successfully validate XML', function ($value, $expectedResult)
 
 })->with([
     [ file_get_contents(__DIR__ . '/files/valid.xml'), true],
+    [ file_get_contents(__DIR__ . '/files/valid_with_cdata.xml'), true],
     [ file_get_contents(__DIR__ . '/files/invalid.xml'), false],
 ]);
 

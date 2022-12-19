@@ -2,17 +2,24 @@
 
 namespace LaravelExtendedValidation\Rules\Format;
 
-class XML implements \Illuminate\Contracts\Validation\Rule
+use Illuminate\Contracts\Validation\Rule;
+use SimpleXMLElement;
+
+class XML implements Rule
 {
 
     /**
      * @inheritDoc
      */
-    public function passes($attribute, $value)
+    public function passes($attribute, $value): bool
     {
-        $xml = simplexml_load_string($value);
+        /** We are doing our own checking */
+        libxml_use_internal_errors(true);
 
-        return $xml instanceof SimpleXMLElement::class;
+        $xml = simplexml_load_string($value, SimpleXMLElement::class);
+
+        return $xml instanceof SimpleXMLElement;
+
     }
 
     /**
@@ -20,6 +27,6 @@ class XML implements \Illuminate\Contracts\Validation\Rule
      */
     public function message()
     {
-        return ':attribute does not contain valid XML'
+        return ':attribute does not contain valid XML';
     }
 }
