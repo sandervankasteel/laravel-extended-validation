@@ -23,7 +23,7 @@ class XML implements Rule
     /**
      * @inheritDoc
      */
-    public function message()
+    public function message(): string
     {
         return ':attribute does not contain valid XML';
     }
