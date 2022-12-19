@@ -7,7 +7,6 @@ use SimpleXMLElement;
 
 class XML implements Rule
 {
-
     /**
      * @inheritDoc
      */
@@ -19,7 +18,6 @@ class XML implements Rule
         $xml = simplexml_load_string($value, SimpleXMLElement::class);
 
         return $xml instanceof SimpleXMLElement;
-
     }
 
     /**
