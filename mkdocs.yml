@@ -75,6 +75,8 @@ nav:
       - dateandtime/Time24Hour.md
       - dateandtime/TimeZoneAbbr.md
       - dateandtime/UnixTime.md
+  - 'Formats':
+      - format/XML.md
   - 'Locales':
       - 'Australia (AU)':
           - locale/AU/Payment/BSBNumber.md
