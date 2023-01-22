@@ -21,7 +21,7 @@ class PostalCode implements Rule
         60000 => 67999, // Lower Northern zone
         70000 => 77999, // Lower Central zone
         80000 => 86999, // Southern zone
-        90000 => 96999 // Southern border zone
+        90000 => 96999, // Southern border zone
     ];
 
     /**
@@ -39,10 +39,9 @@ class PostalCode implements Rule
 
         $foundMatches = collect($this->allowedRanges)
             ->map(static function ($endRange, $startRange) use ($postalCode) {
-                return (
+                return
                     $postalCode >= $startRange &&
-                    $postalCode <= $endRange
-                );
+                    $postalCode <= $endRange;
             })
             ->filter();
 

@@ -20,7 +20,6 @@ test('we can successfully validate a Thai (TH) postal code', function ($postalCo
     ['28000', false], // Falls out of the range of valid data
 ]);
 
-
 test('that the attribute is returned in the error message', function () {
     $sut = new PostalCode();
 
