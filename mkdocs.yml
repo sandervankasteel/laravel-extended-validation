@@ -123,6 +123,8 @@ nav:
       - 'Sweden (SE)':
           - locale/SE/Address/PostalCode.md
           - locale/SE/Company/VatNumber.md
+      - 'Thailand (TH)':
+          - locale/TH/Address/PostalCode.md
   - 'Network':
       - network/Domain.md
       - network/IPv4.md
