@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Added validation rule for XML
 - Added validation rule for Thai postal codes
+- Added validation rule for Taiwanese (3+3 and 3+2) postal codes
 
 ### Changed
 
