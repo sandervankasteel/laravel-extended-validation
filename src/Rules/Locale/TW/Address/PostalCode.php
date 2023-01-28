@@ -8,6 +8,9 @@ use Illuminate\Support\Str;
 
 class PostalCode implements Rule
 {
+    /**
+     * @var string[]
+     */
     protected $firstOctet = [
         '100',
         '103',
@@ -383,9 +386,12 @@ class PostalCode implements Rule
         '983',
     ];
 
+    /**
+     * @var bool
+     */
     public $allowPlusTwo;
 
-    public function __construct($allowPlusTwo = true)
+    public function __construct(bool $allowPlusTwo = true)
     {
         $this->allowPlusTwo = $allowPlusTwo;
     }
