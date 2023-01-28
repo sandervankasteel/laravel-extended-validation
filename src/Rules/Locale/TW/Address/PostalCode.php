@@ -8,7 +8,6 @@ use Illuminate\Support\Str;
 
 class PostalCode implements Rule
 {
-
     protected $firstOctet = [
         '100',
         '103',
@@ -383,6 +382,7 @@ class PostalCode implements Rule
         '982',
         '983',
     ];
+
     public $allowPlusTwo;
 
     public function __construct($allowPlusTwo = true)
@@ -398,22 +398,21 @@ class PostalCode implements Rule
         $postalCode = Str::of($value)
             ->explode('-');
 
-        if($postalCode->count() !== 2) {
+        if ($postalCode->count() !== 2) {
             return false;
         }
 
-        if(!in_array($postalCode->first(), $this->firstOctet)) {
+        if (! in_array($postalCode->first(), $this->firstOctet)) {
             return false;
         }
 
         $lastElement = Str::of($postalCode->last());
 
-        if($this->allowPlusTwo && ( $lastElement->length() === 2 || $lastElement->length() === 3) ) {
+        if ($this->allowPlusTwo && ($lastElement->length() === 2 || $lastElement->length() === 3)) {
             return true;
-
         }
 
-        if(!$this->allowPlusTwo && $lastElement->length() === 3) {
+        if (! $this->allowPlusTwo && $lastElement->length() === 3) {
             return true;
         }
 
