@@ -13,7 +13,8 @@ class IPv6 implements \Illuminate\Contracts\Validation\Rule
     {
         // Based on this Stackoverflow answer: https://stackoverflow.com/a/5567938
         return preg_match(
-            '/^([0-9A-Fa-f]{0,4}:){2,7}([0-9A-Fa-f]{1,4}$|((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4})$/',
+            '/^([\dA-Fa-f]{0,4}:){2,7}([\dA-Fa-f]{1,4}$|'.
+            '((25[0-5]|2[0-4]\d|[01]?\d{2}?)(\.|$)){4})$/',
             $value
         ) > 0;
     }
