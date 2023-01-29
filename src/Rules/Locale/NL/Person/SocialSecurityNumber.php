@@ -6,7 +6,8 @@ use Illuminate\Contracts\Validation\Rule;
 
 /**
  * Class SocialSecurityNumber.
- * This validation is based on he so called '11-proef'. (More info: https://nl.wikipedia.org/wiki/Burgerservicenummer#11-proef)
+ * This validation is based on he so called '11-proef'.
+ * More info: https://nl.wikipedia.org/wiki/Burgerservicenummer#11-proef
  * And is in no way, a verification of the BSN number actually exist and has been given to a person!
  */
 class SocialSecurityNumber implements Rule
