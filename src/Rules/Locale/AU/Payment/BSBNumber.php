@@ -11,8 +11,8 @@ class BSBNumber implements Rule
      */
     public function passes($attribute, $value): bool
     {
-        return (preg_match('/^([0-9]{3}-[0-9]{3})$/', $value) ||
-            preg_match('/^([0-9]{6})$/', $value)) === true;
+        return (preg_match('/^(\d{3}-\d{3})$/', $value) ||
+            preg_match('/^(\d{6})$/', $value)) === true;
     }
 
     /**
