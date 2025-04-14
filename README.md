@@ -2,9 +2,6 @@
 
 [![Automated tests](https://github.com/sandervankasteel/laravel-extended-validation/actions/workflows/tests.yml/badge.svg)](https://github.com/sandervankasteel/laravel-extended-validation/actions/workflows/tests.yml)
 [![codecov](https://codecov.io/gh/sandervankasteel/laravel-extended-validation/branch/main/graph/badge.svg?token=OwUljizrrZ)](https://codecov.io/gh/sandervankasteel/laravel-extended-validation)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=sandervankasteel_laravel-extended-validation&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=sandervankasteel_laravel-extended-validation)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=sandervankasteel_laravel-extended-validation&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=sandervankasteel_laravel-extended-validation)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sandervankasteel_laravel-extended-validation&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=sandervankasteel_laravel-extended-validation)
 
 
 This packages hopes to provide you with a lot of useful additional validation rules :) 
@@ -21,11 +18,14 @@ composer require sandervankasteel/laravel-extended-validation
 
 Laravel Extended Validation has been tested against the following PHP and Laravel version combinations
 
-|             | PHP 7.3 | PHP 7.4 | PHP 8.0 | PHP 8.1 | PHP 8.2 |
-|-------------|---------|---------|---------|---------|---------|
-| Laravel 7.0 | ✅       | ✅       | ✅       | ❌       | ❌       |
-| Laravel 8.0 | ✅       | ✅       | ✅       | ✅       | ✅       |
-| Laravel 9.0 | ❌       | ❌       | ✅       | ✅       | ✅       |
+|              | PHP 7.3 | PHP 7.4 | PHP 8.0 | PHP 8.1 | PHP 8.2 | PHP 8.3 | PHP 8.4 |
+|--------------|---------|---------|---------|---------|---------|---------|---------|
+| Laravel 7.0  | ✅       | ✅       | ✅       | ❌       | ❌       | ❌       | ❌       |
+| Laravel 8.0  | ✅       | ✅       | ✅       | ✅       | ✅       | ✅       | ❌       |
+| Laravel 9.0  | ❌       | ❌       | ✅       | ✅       | ✅       | ✅       | ❌       |
+| Laravel 10.0 | ❌       | ❌       | ✅       | ✅       | ✅       | ✅       | ❌       |
+| Laravel 11.0 | ❌       | ❌       | ✅       | ✅       | ✅       | ✅       | ✅       |
+| Laravel 12.0 | ❌       | ❌       | ✅       | ✅       | ✅       | ✅       | ✅       |
 
 
 
